@@ -12,4 +12,4 @@
 
 
 
-movement_and_collision()
+//movement_and_collision()

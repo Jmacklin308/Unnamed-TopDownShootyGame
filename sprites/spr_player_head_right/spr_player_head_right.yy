@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Player Heads",
-    "path": "folders/Sprites/Player sprite/BoneAnimation/Player Heads.yy",
+    "path": "folders/sprites/Player sprite/BoneAnimation/Player Heads.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_head_right",

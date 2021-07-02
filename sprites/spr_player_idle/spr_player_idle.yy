@@ -281,7 +281,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Player sprite",
-    "path": "folders/Sprites/Player sprite.yy",
+    "path": "folders/sprites/Player sprite.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_idle",

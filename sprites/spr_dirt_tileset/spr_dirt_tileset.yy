@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "World",
-    "path": "folders/Sprites/World.yy",
+    "path": "folders/sprites/World.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_dirt_tileset",

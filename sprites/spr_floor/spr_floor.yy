@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Room sprites",
-    "path": "folders/Sprites/Room sprites.yy",
+    "path": "folders/sprites/Room sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_floor",

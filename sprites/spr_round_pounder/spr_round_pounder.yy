@@ -136,8 +136,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "sprites",
+    "path": "folders/sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_round_pounder",

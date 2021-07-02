@@ -231,7 +231,7 @@
   "nineSlice": null,
   "parent": {
     "name": "BoneAnimation",
-    "path": "folders/Sprites/Player sprite/BoneAnimation.yy",
+    "path": "folders/sprites/Player sprite/BoneAnimation.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_head_blinking",

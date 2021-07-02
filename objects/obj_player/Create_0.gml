@@ -1,1 +1,1 @@
-movement_speed = 30
+movement_speed = 1

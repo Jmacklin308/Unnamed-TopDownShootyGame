@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerMovment(plyrSpeed){
+    //for changing sprite later
+    changeSprite = false;
+    
+    
     speed_with_delta = plyrSpeed * DT;
     
     
@@ -31,12 +35,44 @@ function PlayerMovment(plyrSpeed){
         //call movement script 
         movement_and_collision(input_direction, smooth_speed, obj_parent_colidable);
         
-        //Set sprite to running
-        sprite_index = spr_player_running;
+        
+        
+        ///////////////////////////////////////////////////////////////////
+        //TODO: Fix this nonsense. Maybe to a stuct or enum switch thinngy
+        //////////////////////////////////////////////////////////////////
+        
+        
+        
+        //left right (leave it on the corrisponding idle direction)
+        if (h_input == 1){
+            
+            if(v_input != 0) {
+                //check diag movement
+                if (v_input == -1) sprite_index = spr_player_running_up_right;
+                if (v_input == 1 ) sprite_index = spr_player_running_down_right;
+            }else {
+                sprite_index = spr_player_running_right;
+            }
+            
+        } else if (h_input == -1) 
+        {
+            if (v_input != 0){
+                if (v_input == -1) sprite_index = spr_player_running_up_left;
+                if (v_input == 1 ) sprite_index = spr_player_running_down_left;
+            }else {
+                sprite_index = spr_player_running_left;
+            }
+        }else {
+            
+            //up and down on their own default to the right animation to match the base idle (shown below)
+            if (v_input == -1 ) sprite_index = spr_player_running_up_right;
+            if (v_input == 1 ) sprite_index = spr_player_running_down_right;
+        }
+        
         
         
     }else {
-        //set sprite to idle again
-        sprite_index = spr_player_idle;
-    }
-}
+            //Player is standing still now. Facing the right
+            sprite_index = spr_player_idle_right;
+        }
+    }   

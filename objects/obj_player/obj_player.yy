@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_idle",
-    "path": "sprites/spr_player_idle/spr_player_idle.yy",
+    "name": "spr_player_idle_left",
+    "path": "sprites/spr_player_idle_left/spr_player_idle_left.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":0,"value":"42","rangeEnabled":true,"rangeMin":10.0,"rangeMax":70.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"movement_speed","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"54.4","rangeEnabled":true,"rangeMin":10.0,"rangeMax":70.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"movement_speed","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

@@ -20,3 +20,13 @@ global.weapon_down_left = false;
 global.weapon_down_right = false;
 
 
+
+
+
+//for smooth aiming using twerp
+aim_timer = 0;
+length = room_speed * 2;
+end_aim = 0;
+twerp_type = TwerpType.inout_cubic;
+start_aim = 0;
+

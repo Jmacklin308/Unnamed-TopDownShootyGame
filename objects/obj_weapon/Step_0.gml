@@ -6,7 +6,33 @@ x = obj_player.x;
 y = obj_player.y-10;
 
 
-direction = point_direction(x,y,mouse_x,mouse_y);
+
+
+//////TESTING
+///smooth aiming
+
+//start aim
+
+
+end_aim = point_direction(x,y,mouse_x,mouse_y);
+
+
+aim_timer++;
+twerp_dir = twerp(twerp_type,start_aim,end_aim,aim_timer / length);
+
+show_debug_message(string(twerp_dir));
+
+
+
+image_angle = direction;
+
+
+
+//set wweapon direction
+
+
+
+
 
 
 //flip weapon if pointing left and right
@@ -76,9 +102,6 @@ if(direction >= 225 and direction < 315 ){
 
 
 
-
-//set wweapon direction
-image_angle = direction;
 
 
 

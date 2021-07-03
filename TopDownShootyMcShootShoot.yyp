@@ -68,6 +68,7 @@
     {"id":{"name":"spr_player_head_up","path":"sprites/spr_player_head_up/spr_player_head_up.yy",},"order":2,},
     {"id":{"name":"array_read","path":"scripts/array_read/array_read.yy",},"order":5,},
     {"id":{"name":"device_mouse_check_region_","path":"scripts/device_mouse_check_region_/device_mouse_check_region_.yy",},"order":0,},
+    {"id":{"name":"spr_dirt24","path":"sprites/spr_dirt24/spr_dirt24.yy",},"order":6,},
     {"id":{"name":"ds_grid_empty","path":"scripts/ds_grid_empty/ds_grid_empty.yy",},"order":1,},
     {"id":{"name":"ds_struct_exists","path":"scripts/ds_struct_exists/ds_struct_exists.yy",},"order":3,},
     {"id":{"name":"spr_player_head_left_down","path":"sprites/spr_player_head_left_down/spr_player_head_left_down.yy",},"order":5,},

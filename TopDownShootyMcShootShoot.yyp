@@ -36,6 +36,7 @@
     {"id":{"name":"crv_default","path":"animcurves/crv_default/crv_default.yy",},"order":0,},
     {"id":{"name":"truestate_draw_current","path":"scripts/truestate_draw_current/truestate_draw_current.yy",},"order":1,},
     {"id":{"name":"angle_refract","path":"scripts/angle_refract/angle_refract.yy",},"order":1,},
+    {"id":{"name":"spr_outeredge","path":"sprites/spr_outeredge/spr_outeredge.yy",},"order":7,},
     {"id":{"name":"ds_struct_read","path":"scripts/ds_struct_read/ds_struct_read.yy",},"order":5,},
     {"id":{"name":"sprite_get_speed_","path":"scripts/sprite_get_speed_/sprite_get_speed_.yy",},"order":1,},
     {"id":{"name":"spr_player_head_right_down","path":"sprites/spr_player_head_right_down/spr_player_head_right_down.yy",},"order":7,},
@@ -115,7 +116,6 @@
     {"id":{"name":"color_get_hex","path":"scripts/color_get_hex/color_get_hex.yy",},"order":0,},
     {"id":{"name":"instance_link","path":"scripts/instance_link/instance_link.yy",},"order":1,},
     {"id":{"name":"spr_player_head_right_up","path":"sprites/spr_player_head_right_up/spr_player_head_right_up.yy",},"order":1,},
-    {"id":{"name":"camera_create","path":"scripts/camera_create/camera_create.yy",},"order":5,},
   ],
   "Options": [
     {"name":"HTML5","path":"options/html5/options_html5.yy",},

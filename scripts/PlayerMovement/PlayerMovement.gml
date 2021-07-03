@@ -1,6 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function PlayerMovment(plyrSpeed){
+function PlayerMovement(plyrSpeed){
     //for changing sprite later
     changeSprite = false;
     
@@ -8,11 +6,10 @@ function PlayerMovment(plyrSpeed){
     speed_with_delta = plyrSpeed * DT;
     
     
-    keyLeft = keyboard_check(ord("A"));
-    keyRight = keyboard_check(ord("D"));
-    keyUp = keyboard_check(ord("W"));
-    keyDown = keyboard_check(ord("S"));
-    
+    keyLeft = keyboard_check(ord("A")) || keyboard_check(vk_left);
+    keyRight = keyboard_check(ord("D")) || keyboard_check(vk_right);
+    keyUp = keyboard_check(ord("W")) || keyboard_check(vk_up);
+    keyDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
     
     h_input = keyRight - keyLeft;
     v_input = keyDown - keyUp;
@@ -43,7 +40,7 @@ function PlayerMovment(plyrSpeed){
         
         
         
-        //left right (leave it on the corrisponding idle direction)
+        //set player movement animation
         if (h_input == 1){
             
             if(v_input != 0) {
@@ -71,8 +68,19 @@ function PlayerMovment(plyrSpeed){
         
         
         
-    }else {
-            //Player is standing still now. Facing the right
-            sprite_index = spr_player_idle_right;
+    }else { //If the player is idle
+            
+            if (global.weapon_right) sprite_index = spr_player_idle_right;
+            if (global.weapon_up_right) sprite_index = spr_player_idle_up_right;
+            if (global.weapon_up_left) sprite_index = spr_player_idle_up_left;
+            if (global.weapon_left) sprite_index = spr_player_idle_left;
+            if (global.weapon_down_left) sprite_index = spr_player_idle_down_left;
+            if (global.weapon_down_right) sprite_index = spr_player_idle_down_right;
+        
         }
+        
+        
+        
+        return h_input;
+        return v_input;
     }   

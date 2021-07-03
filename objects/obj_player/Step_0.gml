@@ -1,2 +1,2 @@
 //Move it baby
-PlayerMovment(movement_speed);
+PlayerMovement(movement_speed);

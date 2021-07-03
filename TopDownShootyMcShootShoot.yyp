@@ -98,6 +98,7 @@
     {"id":{"name":"camera_get_view","path":"scripts/camera_get_view/camera_get_view.yy",},"order":0,},
     {"id":{"name":"spr_player_head_right","path":"sprites/spr_player_head_right/spr_player_head_right.yy",},"order":0,},
     {"id":{"name":"PlayerMovment","path":"scripts/PlayerMovment/PlayerMovment.yy",},"order":0,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"ds_struct_create","path":"scripts/ds_struct_create/ds_struct_create.yy",},"order":1,},
     {"id":{"name":"truestate_switch","path":"scripts/truestate_switch/truestate_switch.yy",},"order":7,},
     {"id":{"name":"spr_player_head_down","path":"sprites/spr_player_head_down/spr_player_head_down.yy",},"order":6,},
@@ -113,6 +114,7 @@
     {"id":{"name":"color_get_hex","path":"scripts/color_get_hex/color_get_hex.yy",},"order":0,},
     {"id":{"name":"instance_link","path":"scripts/instance_link/instance_link.yy",},"order":1,},
     {"id":{"name":"spr_player_head_right_up","path":"sprites/spr_player_head_right_up/spr_player_head_right_up.yy",},"order":1,},
+    {"id":{"name":"camera_create","path":"scripts/camera_create/camera_create.yy",},"order":5,},
   ],
   "Options": [
     {"name":"HTML5","path":"options/html5/options_html5.yy",},

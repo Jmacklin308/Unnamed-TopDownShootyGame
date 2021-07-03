@@ -24,7 +24,6 @@ function PlayerMovment(plyrSpeed){
         //keep player from coasting to the right
         if (input_direction == 0) input_direction = 360;
         
-        
 
         speedtimer++; // count dimer
         smooth_speed = twerp(TwerpType.inout_quart, 0, speed_with_delta,speedtimer);

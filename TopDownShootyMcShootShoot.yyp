@@ -16,6 +16,7 @@
     {"id":{"name":"truestate_switch_previous","path":"scripts/truestate_switch_previous/truestate_switch_previous.yy",},"order":8,},
     {"id":{"name":"truestate_enqueue","path":"scripts/truestate_enqueue/truestate_enqueue.yy",},"order":4,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":2,},
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":7,},
     {"id":{"name":"sprite_LavaLevel","path":"sprites/sprite_LavaLevel/sprite_LavaLevel.yy",},"order":5,},
     {"id":{"name":"truestate_draw_current","path":"scripts/truestate_draw_current/truestate_draw_current.yy",},"order":1,},
     {"id":{"name":"spr_player_head_right_down","path":"sprites/spr_player_head_right_down/spr_player_head_right_down.yy",},"order":7,},

@@ -30,16 +30,9 @@ function PlayerMovment(plyrSpeed){
         
         //call movement script 
         movement_and_collision(input_direction, smooth_speed, obj_parent_colidable);
-        show_debug_message(string(speedtimer));
         
         //Set sprite to running
         sprite_index = spr_player_running;
-        
-        
-        
-        
-        
-        
         
         
     }else {

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Strings",
-    "path": "folders/XGASOFT/GML+/Scripts/Strings.yy",
+    "path": "folders/Scripts/GML+/Strings.yy",
   },
   "resourceVersion": "1.0",
   "name": "string_lower_",

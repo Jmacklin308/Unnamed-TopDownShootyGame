@@ -16,7 +16,35 @@ src_animating_player();
 
 
 //shooting weapon
-src_weapon_shooting(damage,recoil,recoil_push,length_to_barel,cooldown,bullet_speed,ammo_count,sprite_used);
-
+    //mouse button
+    var _mouse_button = mouse_check_button(mb_left);
+    
+    //checks if the weapon is ready to fire
+	var _inital_cooldown = cooldown;
+    
+    cooldown = cooldown - 1;
+    if (_mouse_button and (cooldown < 0)){
+        cooldown = _inital_cooldown;  //reset cool down
+        
+        
+        xdir = lengthdir_x(length_to_barel,direction);
+        ydir = lengthdir_y(length_to_barel,direction);
+        
+        show_debug_message("xdir"+string(xdir));
+        show_debug_message("ydir"+string(ydir));
+        
+        
+        //create bullet while interfacing with it
+        with (instance_create_layer(x+ xdir,y+ ydir,"bullets",obj_bullet)){
+            speed = other.bullet_speed;
+            direction = other.image_angle;
+			image_angle = direction;
+           
+            
+        };
+        
+        
+        
+    }
 
 

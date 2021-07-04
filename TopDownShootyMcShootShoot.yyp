@@ -155,6 +155,7 @@
     {"id":{"name":"set_chance","path":"scripts/set_chance/set_chance.yy",},"order":3,},
     {"id":{"name":"truestate_create_state","path":"scripts/truestate_create_state/truestate_create_state.yy",},"order":3,},
     {"id":{"name":"draw_text_shadow","path":"scripts/draw_text_shadow/draw_text_shadow.yy",},"order":3,},
+    {"id":{"name":"snd_gunshot","path":"sounds/snd_gunshot/snd_gunshot.yy",},"order":0,},
     {"id":{"name":"make_color_hex","path":"scripts/make_color_hex/make_color_hex.yy",},"order":1,},
     {"id":{"name":"ds_struct_destroy","path":"scripts/ds_struct_destroy/ds_struct_destroy.yy",},"order":2,},
     {"id":{"name":"color_get_hex","path":"scripts/color_get_hex/color_get_hex.yy",},"order":0,},
@@ -236,6 +237,7 @@
     {"folderPath":"folders/Scripts/Essential Scripts/List Functions.yy","order":5,"resourceVersion":"1.0","name":"List Functions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Essential Scripts/Misc.yy","order":6,"resourceVersion":"1.0","name":"Misc","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Essential Scripts/String Manipulation.yy","order":7,"resourceVersion":"1.0","name":"String Manipulation","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/sounds.yy","order":12,"resourceVersion":"1.0","name":"sounds","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -5,10 +5,9 @@ damage = 30;
 recoil = 0;
 recoil_push = 0;
 length_to_barel = 17;
-cooldown = 0;
-bullet_speed = 0;
+cooldown = 4;
+bullet_speed = 2;
 ammo_count = 0;
-sprite_used = spr_mg;
 
 
 //for player sprite in relation to the weapon angle

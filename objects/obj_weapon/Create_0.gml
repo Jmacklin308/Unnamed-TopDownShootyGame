@@ -8,7 +8,7 @@ length_to_barel = 17;
 cooldown = 0;
 bullet_speed = 0;
 ammo_count = 0;
-
+sprite_used = spr_mg;
 
 
 //for player sprite in relation to the weapon angle
@@ -24,9 +24,4 @@ global.weapon_down_right = false;
 
 
 //for smooth aiming using twerp
-aim_timer = 0;
-length = room_speed * 2;
-end_aim = 0;
-twerp_type = TwerpType.inout_cubic;
-start_aim = 0;
-
+weapon_turn_speed = 9;

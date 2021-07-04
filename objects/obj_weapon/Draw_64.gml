@@ -8,6 +8,3 @@ draw_text(40,text_y+80,string("downLeft: "+string(global.weapon_down_left)));
 draw_text(40,text_y+100,string("downRight: "+string(global.weapon_down_right)));
 
 
-draw_text(40,text_y+150,string("Direction equals: "+string(direction)));
-draw_text(40,text_y+180,string("end aim"+string(end_aim)));
-draw_text(40,text_y+200,string("start aim"+string(start_aim)));

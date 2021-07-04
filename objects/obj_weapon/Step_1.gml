@@ -37,7 +37,13 @@ src_animating_player();
             speed = other.bullet_speed;
             direction = other.image_angle;
 			image_angle = direction;
+			
+			//play gunshot
 			audio_play_sound(snd_gunshot,10,0);
+			
+			
+			//shake the screen
+			obj_camera.shakeValue = 1;
         };
         
         

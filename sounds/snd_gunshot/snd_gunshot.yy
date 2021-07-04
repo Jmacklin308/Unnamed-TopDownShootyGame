@@ -1,6 +1,6 @@
 {
-  "compression": 0,
-  "volume": 1.0,
+  "compression": 3,
+  "volume": 0.51,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_gunshot",
-  "duration": 0.0,
+  "soundFile": "snd_gunshot.wav",
+  "duration": 0.15237,
   "parent": {
     "name": "sounds",
     "path": "folders/sounds.yy",

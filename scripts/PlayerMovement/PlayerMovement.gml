@@ -41,6 +41,8 @@ function PlayerMovement(plyrSpeed){
         
         
         //set player movement animation
+        
+        //if moving right
         if (h_input == 1){
             
             if(v_input != 0) {
@@ -50,8 +52,10 @@ function PlayerMovement(plyrSpeed){
             }else {
                 sprite_index = spr_player_running_right;
             }
-            
-        } else if (h_input == -1) 
+        } 
+        
+        //if moving left
+        if (h_input == -1) 
         {
             if (v_input != 0){
                 if (v_input == -1) sprite_index = spr_player_running_up_left;

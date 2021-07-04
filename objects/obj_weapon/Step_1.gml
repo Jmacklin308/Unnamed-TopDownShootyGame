@@ -37,6 +37,7 @@ src_animating_player();
             speed = other.bullet_speed;
             direction = other.image_angle;
 			image_angle = direction;
+			audio_play_sound(snd_gunshot,10,0);
         };
         
         

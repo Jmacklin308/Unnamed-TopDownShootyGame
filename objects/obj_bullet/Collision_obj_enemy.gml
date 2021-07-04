@@ -1,0 +1,1 @@
+obj_enemy.direction -= 3

@@ -50,6 +50,7 @@
     {"id":{"name":"crv_default","path":"animcurves/crv_default/crv_default.yy",},"order":0,},
     {"id":{"name":"truestate_draw_current","path":"scripts/truestate_draw_current/truestate_draw_current.yy",},"order":1,},
     {"id":{"name":"spr_player_running_up_right","path":"sprites/spr_player_running_up_right/spr_player_running_up_right.yy",},"order":5,},
+    {"id":{"name":"obj_crosshair","path":"objects/obj_crosshair/obj_crosshair.yy",},"order":7,},
     {"id":{"name":"draw_text_shadow_ext","path":"scripts/draw_text_shadow_ext/draw_text_shadow_ext.yy",},"order":4,},
     {"id":{"name":"angle_refract","path":"scripts/angle_refract/angle_refract.yy",},"order":1,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":7,},
@@ -67,6 +68,7 @@
     {"id":{"name":"spr_player_idle_down_left","path":"sprites/spr_player_idle_down_left/spr_player_idle_down_left.yy",},"order":11,},
     {"id":{"name":"ds_list_replace_","path":"scripts/ds_list_replace_/ds_list_replace_.yy",},"order":2,},
     {"id":{"name":"Essential_Scripts","path":"extensions/Essential_Scripts/Essential_Scripts.yy",},"order":0,},
+    {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":0,},
     {"id":{"name":"spr_dirt","path":"sprites/spr_dirt/spr_dirt.yy",},"order":1,},
     {"id":{"name":"spr_player_running_down_right","path":"sprites/spr_player_running_down_right/spr_player_running_down_right.yy",},"order":2,},
     {"id":{"name":"string_implode","path":"scripts/string_implode/string_implode.yy",},"order":1,},
@@ -238,6 +240,7 @@
     {"folderPath":"folders/Scripts/Essential Scripts/Misc.yy","order":6,"resourceVersion":"1.0","name":"Misc","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Essential Scripts/String Manipulation.yy","order":7,"resourceVersion":"1.0","name":"String Manipulation","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/sounds.yy","order":12,"resourceVersion":"1.0","name":"sounds","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/sprites/UI.yy","order":5,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

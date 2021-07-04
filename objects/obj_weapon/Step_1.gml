@@ -24,27 +24,24 @@ src_animating_player();
     
     cooldown = cooldown - 1;
     if (_mouse_button and (cooldown < 0)){
-        cooldown = _inital_cooldown;  //reset cool down
-        
+        cooldown = rateOfFire;
         
         xdir = lengthdir_x(length_to_barel,direction);
         ydir = lengthdir_y(length_to_barel,direction);
         
-        show_debug_message("xdir"+string(xdir));
-        show_debug_message("ydir"+string(ydir));
         
+        show_debug_message(string(_inital_cooldown));
         
         //create bullet while interfacing with it
         with (instance_create_layer(x+ xdir,y+ ydir,"bullets",obj_bullet)){
             speed = other.bullet_speed;
             direction = other.image_angle;
 			image_angle = direction;
-           
-            
         };
         
         
         
+        
     }
-
+        
 

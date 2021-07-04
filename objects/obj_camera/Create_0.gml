@@ -22,5 +22,5 @@ surface_resize(application_surface,view_width*window_scale,view_height*window_sc
 
 
 //screenshake
-shake_power = 5;
+shake_power = 3;
 shakeValue = 0;

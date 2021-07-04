@@ -31,20 +31,36 @@ src_animating_player();
         
         
         show_debug_message(string(_inital_cooldown));
+        repeat(number_of_projectiles){
+            with (instance_create_layer(x+ xdir,y+ ydir,"bullets",obj_bullet)){
+                
+                //random direction (weapon spread)
+                var _rand_dir = random_range(-other.weapon_spread,other.weapon_spread);
+                
+                
+                speed = other.bullet_speed;
+                direction = other.image_angle + _rand_dir;
+    			image_angle = direction;
+    			
+    			//play gunshot
+    			var _rand_sound = random_range(1,3);
+    			if (_rand_sound == 1)audio_play_sound(snd_gunshot_high,10,0); else audio_play_sound(snd_gunshot_Low,10,0);
+    			
+    			
+    			//shake the screen
+    			obj_camera.shakeValue = 1;
+    			
+    			//push back player
+    			
+    			obj_player.x -= lengthdir_x(other.recoil,-other.direction);
+    			obj_player.y -= lengthdir_y(other.recoil,+other.direction);
+    			
+    			
+            };
+            
+            
+        }
         
-        //create bullet while interfacing with it
-        with (instance_create_layer(x+ xdir,y+ ydir,"bullets",obj_bullet)){
-            speed = other.bullet_speed;
-            direction = other.image_angle;
-			image_angle = direction;
-			
-			//play gunshot
-			audio_play_sound(snd_gunshot,10,0);
-			
-			
-			//shake the screen
-			obj_camera.shakeValue = 1;
-        };
         
         
         

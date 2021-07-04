@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_gunshot.wav",
+  "soundFile": "snd_gunshot_high.wav",
   "duration": 0.15237,
   "parent": {
     "name": "sounds",
     "path": "folders/sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_gunshot",
+  "name": "snd_gunshot_high",
   "tags": [],
   "resourceType": "GMSound",
 }

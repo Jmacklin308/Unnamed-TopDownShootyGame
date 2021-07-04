@@ -25,6 +25,7 @@
     {"id":{"name":"sprite_get_index","path":"scripts/sprite_get_index/sprite_get_index.yy",},"order":0,},
     {"id":{"name":"truestate_clear_history","path":"scripts/truestate_clear_history/truestate_clear_history.yy",},"order":0,},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":1,},
+    {"id":{"name":"rm_test_2","path":"rooms/rm_test_2/rm_test_2.yy",},"order":3,},
     {"id":{"name":"spr_player_idle_up_left","path":"sprites/spr_player_idle_up_left/spr_player_idle_up_left.yy",},"order":12,},
     {"id":{"name":"spr_player_head_left_up","path":"sprites/spr_player_head_left_up/spr_player_head_left_up.yy",},"order":3,},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},"order":0,},
@@ -33,7 +34,7 @@
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"order":4,},
     {"id":{"name":"truestate_switch_previous","path":"scripts/truestate_switch_previous/truestate_switch_previous.yy",},"order":8,},
     {"id":{"name":"truestate_enqueue","path":"scripts/truestate_enqueue/truestate_enqueue.yy",},"order":4,},
-    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":2,},
+    {"id":{"name":"rm_test_1","path":"rooms/rm_test_1/rm_test_1.yy",},"order":2,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":7,},
     {"id":{"name":"sprite_LavaLevel","path":"sprites/sprite_LavaLevel/sprite_LavaLevel.yy",},"order":6,},
     {"id":{"name":"src_weapon_shooting","path":"scripts/src_weapon_shooting/src_weapon_shooting.yy",},"order":13,},
@@ -180,7 +181,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"rm_test_2","path":"rooms/rm_test_2/rm_test_2.yy",},},
+    {"roomId":{"name":"rm_test_1","path":"rooms/rm_test_1/rm_test_1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Scripts.yy","order":5,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_gunshot_high.wav",
-  "duration": 0.15237,
+  "duration": 0.14737,
   "parent": {
     "name": "sounds",
     "path": "folders/sounds.yy",

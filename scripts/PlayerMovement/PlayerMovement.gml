@@ -5,21 +5,23 @@ function PlayerMovement(plyrSpeed){
     
     speed_with_delta = plyrSpeed * DT;
     
-    
+    //inputs
     keyLeft = keyboard_check(ord("A")) || keyboard_check(vk_left);
     keyRight = keyboard_check(ord("D")) || keyboard_check(vk_right);
     keyUp = keyboard_check(ord("W")) || keyboard_check(vk_up);
     keyDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
     
+	//assign inputs
     h_input = keyRight - keyLeft;
     v_input = keyDown - keyUp;
     
-    //smooth out that speed
     
     input_direction = 0;
     //check if were moving
     if (h_input != 0 || v_input != 0){
-        speedtimer = 0; // for twerp
+        
+		
+		speedtimer = 0; // for twerp
         input_direction = point_direction(0,0,h_input , v_input);
         
         //keep player from coasting to the right

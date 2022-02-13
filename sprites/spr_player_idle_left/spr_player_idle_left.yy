@@ -61,7 +61,7 @@
     "resourceType": "GMSequence",
   },
   "origin": 7,
-  "bboxMode": 2,
+  "bboxMode": 0,
   "collisionKind": 4,
   "type": 0,
   "preMultiplyAlpha": false,

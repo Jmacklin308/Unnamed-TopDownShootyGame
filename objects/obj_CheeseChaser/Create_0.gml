@@ -11,3 +11,8 @@ damage = 10;
 
 //in seconds
 attackCooldown = 5;
+
+
+
+//for attacking
+canAttack = false;

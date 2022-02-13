@@ -1,5 +1,7 @@
+
+//for moving
 h_input = 0;
-v_input = 9;
+v_input = 0;
 
 //globals for player
 global.Player_MovingUp = false;
@@ -8,6 +10,7 @@ global.Player_MovingLeft = false;
 global.Player_MovingRight = false;
 global.Player_IsMoving = false;
 
+//player variables
 global.playerHealth = 100;
 
 //for alarm - damage system
@@ -16,6 +19,12 @@ playerDamageTaken = 0;
 //for damage recieved
 beingAttacked = false;
 
+state = PLAYERSTATE.FREE;
+hitByAttack = ds_list_create();
 
-//spawn mask
-instance_create_layer(x,y,"CollisionMask",obj_playerMask)
+
+//states
+enum PLAYERSTATE
+{
+	FREE,
+}

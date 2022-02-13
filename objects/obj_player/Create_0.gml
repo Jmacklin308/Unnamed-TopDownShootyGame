@@ -8,3 +8,9 @@ global.Player_MovingDown = false;
 global.Player_MovingLeft = false;
 global.Player_MovingRight = false;
 global.Player_IsMoving = false;
+
+
+
+
+
+playerHealth = 100;

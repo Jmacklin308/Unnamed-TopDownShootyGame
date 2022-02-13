@@ -41,9 +41,7 @@ src_animating_player();
     			var _rand_sound = random_range(1,3);
 				
 				//set random pitch
-				_rand_sound.pitch = random_range(1,9);
 				
-				show_debug_message(_rand_sound.pitch);
 				
     			if (_rand_sound == 1)audio_play_sound(snd_gunshot_high,10,0); else audio_play_sound(snd_gunshot_Low,10,0);
     			

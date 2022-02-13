@@ -1,7 +1,7 @@
 /// @description 
 //Weapon attributes
 
-damage = 30;
+damage = 10;
 recoil = 2;
 recoil_push = 0;
 length_to_barel = 17;

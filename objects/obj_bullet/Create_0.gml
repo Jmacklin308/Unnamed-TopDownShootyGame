@@ -1,0 +1,1 @@
+BulletDamage = 0;

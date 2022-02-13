@@ -23,8 +23,5 @@ global.weapon_down_left = false;
 global.weapon_down_right = false;
 
 
-
-
-
 //for smooth aiming using twerp
 weapon_turn_speed = 9;

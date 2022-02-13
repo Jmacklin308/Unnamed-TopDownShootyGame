@@ -17,11 +17,6 @@
 ///					Must be run in the Step event for changes to position, rotation, and scale to 
 ///					apply continuously.
 ///
-///					Note that while it is not strictly required, it is recommended to run this
-///					function with `obj_server_gmlp` in existence. Without `obj_server_gmlp`, if 
-///					rotation or scale linking is enabled, only one instance of `instance_link` can 
-///					be run per object instance.
-///
 /// @example		instance_link(obj_grid, obj_cell, true, true, true);
 ///
 /// @author			Lucas Chasteen <lucas.chasteen@xgasoft.com>
@@ -62,21 +57,26 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 	*/
 	
 	with (_parent) {
+		// Initialize expanded image previous variables
+		var	uid = string(debug_get_callstack(2)[1]),
+			str_img_angle_previous  = "img_angle_previous_"  + uid,
+			str_img_xscale_previous = "img_xscale_previous_" + uid,
+			str_img_yscale_previous = "img_yscale_previous_" + uid;
+		if (!variable_instance_exists(id, str_img_angle_previous)) {
+			variable_instance_set(id, str_img_angle_previous, image_angle);
+		}
+		if (!variable_instance_exists(id, str_img_xscale_previous)) {
+			variable_instance_set(id, str_img_xscale_previous, image_xscale);
+		}
+		if (!variable_instance_exists(id, str_img_yscale_previous)) {
+			variable_instance_set(id, str_img_yscale_previous, image_yscale);
+		}
+		
 		// Initialize temporary variables
-		var roffset, xoffset, yoffset, scale_xoffset, scale_yoffset;
-	
-		// Initialize rotation tracking
-		if (!variable_instance_exists(id, "image_angle_previous")) {
-			image_angle_previous = image_angle;
-		}
-	
-		// Initialize scale tracking
-		if (!variable_instance_exists(id, "image_xscale_previous")) {
-			image_xscale_previous = image_xscale;
-		}
-		if (!variable_instance_exists(id, "image_yscale_previous")) {
-			image_yscale_previous = image_yscale;
-		}
+		var roffset, xoffset, yoffset, scale_xoffset, scale_yoffset,
+			img_angle_previous  = variable_instance_get(id, str_img_angle_previous),
+			img_xscale_previous = variable_instance_get(id, str_img_xscale_previous),
+			img_yscale_previous = variable_instance_get(id, str_img_yscale_previous);
 
 
 		/*
@@ -93,18 +93,18 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 			// Link scale, if enabled
 			if (_scale == true) {
 				// If parent has scaled...
-				if (image_xscale != image_xscale_previous) or (image_yscale != image_yscale_previous) {				
+				if (image_xscale != img_xscale_previous) or (image_yscale != img_yscale_previous) {				
 					// Limit scale to prevent positional data loss
 					if (image_xscale == 0) {
-						image_xscale = (0.01*sign(image_xscale_previous));
+						image_xscale = (0.01*sign(img_xscale_previous));
 					}
 					if (image_yscale == 0) {
-						image_yscale = (0.01*sign(image_yscale_previous));
+						image_yscale = (0.01*sign(img_yscale_previous));
 					}
 				
 					// Get difference in scale
-					scale_xoffset = (image_xscale - image_xscale_previous);
-					scale_yoffset = (image_yscale - image_yscale_previous);
+					scale_xoffset = (image_xscale - img_xscale_previous);
+					scale_yoffset = (image_yscale - img_yscale_previous);
    
 					// Update child scale
 					with (_child[c]) {
@@ -122,9 +122,9 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 			// Link rotation, if enabled
 			if (_rot == true) {
 				// If parent has rotated...
-				if (image_angle != image_angle_previous) {
+				if (image_angle != img_angle_previous) {
 					// Get difference in rotation
-					roffset = (image_angle - image_angle_previous);
+					roffset = (image_angle - img_angle_previous);
 			
 					// Update child rotation
 					with (_child[c]) {
@@ -154,10 +154,10 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 				}
 			
 				// if parent has scaled...
-				if (image_xscale != image_xscale_previous) or (image_yscale != image_yscale_previous) {	
+				if (image_xscale != img_xscale_previous) or (image_yscale != img_yscale_previous) {	
 					// Get difference in scale
-					scale_xoffset = (image_xscale/image_xscale_previous);
-					scale_yoffset = (image_yscale/image_yscale_previous);   
+					scale_xoffset = (image_xscale/img_xscale_previous);
+					scale_yoffset = (image_yscale/img_yscale_previous);   
 				
 					// Update child position based on parent scale
 					with (_child[c]) {
@@ -167,9 +167,9 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 				}
 			
 				// If parent has rotated...
-				if (image_angle != image_angle_previous) {
+				if (image_angle != img_angle_previous) {
 					// Get difference in rotation
-					roffset = (image_angle - image_angle_previous);
+					roffset = (image_angle - img_angle_previous);
 				
 					// Update child position based on parent rotation
 					with (_child[c]) {
@@ -189,12 +189,9 @@ function instance_link(_parent, _child, _pos, _rot, _scale) {
 		*/
 	
 		// Update instance properties for next step
-		if (asset_get_index("obj_server_gmlp") == -1) 
-		or (!instance_exists(asset_get_index("obj_server_gmlp"))) {
-			image_angle_previous = image_angle;
-			image_xscale_previous = image_xscale;
-			image_yscale_previous = image_yscale;
-		}
+		variable_instance_set(id, str_img_angle_previous,  image_angle);
+		variable_instance_set(id, str_img_xscale_previous, image_xscale);
+		variable_instance_set(id, str_img_yscale_previous, image_yscale);
 	}
 	
 	// Clear child object/instance array from memory

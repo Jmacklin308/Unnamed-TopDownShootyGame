@@ -11,6 +11,9 @@ global.Player_IsMoving = false;
 
 
 
-
-
 playerHealth = 100;
+
+
+
+//for alarm - damage system
+playerDamageTaken = 0;

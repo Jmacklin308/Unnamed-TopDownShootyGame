@@ -7,7 +7,9 @@
 ///					If the given input is invalid, `undefined` will be returned instead.
 ///
 ///					This type of copy operation is also known as a "deep clone", meaning data is
-///					truly duplicated in memory rather than merely referenced.
+///					truly duplicated in memory rather than merely referenced. Note that this does
+///					NOT include dynamic data structures and functions! (Use methods instead to
+///					support deep cloning.)
 ///
 /// @example		my_new_struct = ds_struct_copy(my_struct);
 ///					
@@ -54,7 +56,7 @@ function ds_struct_copy(_struct) {
 					array_push(keys, variable_struct_get(obj_root, keys[k]));
 					array_push(keys, variable_struct_get(tmp_root, keys[k]));
 				}
-				array_copy(keys, array_length(keys), variable_struct_get_names(key), 0, array_length(variable_struct_get_names(key)));
+				array_copy(keys, array_length(keys), variable_struct_get_names(key), 0, variable_struct_names_count(key));
 				continue;
 			}
 			

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Language Features",
-    "path": "folders/Scripts/GML+/Language Features.yy",
+    "path": "folders/XGASOFT/GML+/Scripts/Language Features.yy",
   },
   "resourceVersion": "1.0",
   "name": "foreach",

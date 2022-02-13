@@ -6,19 +6,16 @@
 ///
 ///					Some examples of "empty" data include:
 ///
-///					`undefined`, `NaN`, `false`, 0, "0", "", [], etc.
+///					`undefined`, `NaN`, `false`, 0, "0", "", [], {}, etc.
 ///
 ///					If the input value points to a data structure, buffer, etc., the structure will
 ///					be considered empty if no values exist inside the structure itself. Transparent
 ///					surfaces are also considered empty.
 ///
-///					Some types of data (e.g. structs) cannot be evaluated and will return `false` by
-///					default. Also note that different data types incur different performance costs 
-///					to evaluate.
-///
 ///					Note that in some cases this function may not return the expected result due to
 ///					the way GameMaker handles pointers. This means some types of data can share the
-///					same value, and whichever one happens to be first will take priority.
+///					same value, and whichever one happens to be first will take priority. Also note
+///					that different data types incur different performance costs to evaluate.
 ///
 /// @example		var surf = surface_create(1280, 720);
 ///					var ds = ds_list_create();
@@ -48,6 +45,11 @@ function is_empty(_val) {
 	// Arrays
 	if (is_array(_val)) {
 		return (array_length(_val) == 0);
+	}
+	
+	// Structs
+	if (is_struct(_val)) {
+		return (variable_struct_names_count(_val) == 0);
 	}
 	
 	// Buffers

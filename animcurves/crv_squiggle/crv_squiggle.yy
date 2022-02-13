@@ -18,7 +18,7 @@
   ],
   "parent": {
     "name": "Animation Curves",
-    "path": "folders/Scripts/GML+/Animation Curves.yy",
+    "path": "folders/XGASOFT/GML+/Animation Curves.yy",
   },
   "resourceVersion": "1.2",
   "name": "crv_squiggle",

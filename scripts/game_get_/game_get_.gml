@@ -18,11 +18,18 @@
 /// @copyright		XGASOFT 2020, All Rights Reserved
 
 function game_get_step() {
-	// Initialize lost processing time tracker
-	gml_pragma("global", "global.time_loss = 0;");
+	// Use more accurate timing method, if available
+	if (instance_exists(asset_get_index("obj_server_gmlp"))) {
+		var get_timer_current = global.ds_gmlp.time.step,
+			get_timer_loss = global.ds_gmlp.time.loss;
+	} else {
+		// Otherwise use fallback
+		var get_timer_current = get_timer(),
+			get_timer_loss = 0;
+	}
 
 	// Get the current session time, adjusted for lost time
-	var get_timer_adjusted = (get_timer() - global.time_loss);
+	var get_timer_adjusted = (get_timer_current - get_timer_loss);
 
 	// Return the current Step count, converted from session time
 	return floor(get_timer_adjusted/game_get_speed(gamespeed_microseconds));
@@ -36,21 +43,21 @@ function game_get_step() {
 ///					running. If no `[type]` is specified, milliseconds will be returned 
 ///					by default.
 ///
-/// @example		var hours_played = floor(game_get_time(gamespeed_fps)/1000/60/60);
-///					var ms_played = (game_get_time(gamespeed_microseconds)/100000);
+/// @example		var hours_played = floor(game_get_time()/1000/60/60);
+///					var mins_played = floor(game_get_time(gamespeed_microseconds)/1000000000/60);
 ///
 /// @author			Lucas Chasteen <lucas.chasteen@xgasoft.com>
 /// @copyright		XGASOFT 2020, All Rights Reserved
 
 function game_get_time() {
-	// Get value type
-	var time_convert = 0.000001;
+	// Get arguments
+	var time = current_time;
 	if (argument_count > 0) {
 		if (argument[0] == gamespeed_microseconds) {
-			time_convert = 1;
+			time = get_timer();
 		}
 	}
 
-	// Return the current session time, converted to the input time type
-	return (get_timer()*time_convert);
+	// Return the current session time in the requested format
+	return time;
 }

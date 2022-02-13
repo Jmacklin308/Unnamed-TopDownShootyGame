@@ -2,7 +2,7 @@
 /// @param			{string}	var
 /// @param			{integer}	n
 /// @description	Searches existing instances for a particular variable and returns the ID
-///					of the containing instance, or keyword noone if not found.
+///					of the containing instance, or keyword `noone` if not found.
 ///					
 ///					If multiple matching instances exist, you can specify which to return
 ///					with the `n` argument, where the first instance is number 0. If the input

@@ -3,7 +3,7 @@
 /// @param			{real}	mirror
 /// @param			{real}	out_index
 /// @param			{real}	in_index
-/// @requires		angle_reflect, approx
+/// @requires		angle_reflect, approx, emod
 /// @description	Refractions are *sided*, meaning the resulting refraction angle depends on which 
 ///					direction the input angle is coming from (relative to the orientation of the mirror 
 ///					"line"). Angles between 0-180 degrees are considered to be *inside* the refractive 
@@ -61,8 +61,8 @@ function angle_refract(_angle_in, _angle_mirror, _index_out, _index_in) {
 	var _angle_reflect = angle_reflect(_angle_in, _angle_mirror);
 	
 	// Normalize input angles
-	_angle_in = (_angle_in mod 360);
-	_angle_mirror = (_angle_mirror mod 360);
+	_angle_in = emod(_angle_in, 360);
+	_angle_mirror = emod(_angle_mirror, 360);
 	
 	// Get refraction "critical angle" (at which point it becomes a reflection)
 	var _angle_crit = darcsin(_index_out/_index_in);

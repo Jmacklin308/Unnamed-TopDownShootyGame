@@ -4,12 +4,13 @@ function PlayerMovement(plyrSpeed){
     
     speed_with_delta = plyrSpeed * DT;
     
-    //inputs
+	//Keyboard Input
     keyLeft = keyboard_check(ord("A")) || keyboard_check(vk_left);
     keyRight = keyboard_check(ord("D")) || keyboard_check(vk_right);
     keyUp = keyboard_check(ord("W")) || keyboard_check(vk_up);
     keyDown = keyboard_check(ord("S")) || keyboard_check(vk_down);
     
+	
 	//assign inputs
     h_input = keyRight - keyLeft;
     v_input = keyDown - keyUp;
@@ -40,7 +41,6 @@ function PlayerMovement(plyrSpeed){
         movement_and_collision(input_direction, smooth_speed, obj_parent_colidable);
         
         //set player movement animation
-		
         //if moving right
         if (h_input == 1){
             if(v_input != 0) {
@@ -76,9 +76,6 @@ function PlayerMovement(plyrSpeed){
 			global.Player_MovingLeft = false;
 			global.Player_MovingUp = false;
 			global.Player_MovingDown = false;
-			
-			
-			
 			
             if (global.weapon_right) sprite_index = spr_player_idle_right;
             if (global.weapon_up_right) sprite_index = spr_player_idle_up_right;

@@ -1,3 +1,4 @@
+event_inherited();
 //for moving
 h_input = 0;
 v_input = 0;
@@ -21,7 +22,6 @@ beingAttacked = false;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
-
 
 //states
 enum PLAYERSTATE

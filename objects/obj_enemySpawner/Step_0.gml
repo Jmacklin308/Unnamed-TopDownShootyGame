@@ -1,5 +1,5 @@
 //spawn every 5 seconds if not maxed out on enemies
-if(wait(2) && !(global.totalEnemiesSpawned >= global.maxEnemies) )
+if(wait(global.enemySpawnRate) && !(global.totalEnemiesSpawned >= global.maxEnemies) )
 {
 	instance = instance_create_layer(x,y,spawnLayer,obj_CheeseChaser);
 	instance.image_xscale = .5;

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sprite33",
+    "path": "sprites/Sprite33/Sprite33.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -19,15 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "group1",
+    "path": "folders/Objects/group1.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_parent_enemy",
+  "name": "obj_parent_depth",
   "tags": [],
   "resourceType": "GMObject",
 }

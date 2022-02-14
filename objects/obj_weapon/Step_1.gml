@@ -45,13 +45,25 @@ src_animating_player();
     			
     			//shake the screen
     			obj_camera.shakeValue = other.cameraShakeAmount;
-    			
-				//movebackward
 				
-    			////push player back
-    			obj_player.x -= lengthdir_x(other.recoil,-other.direction);
-    			obj_player.y -= lengthdir_y(other.recoil,+other.direction);
-    			
+				//if colliding - dont recoil back
+				var recoilDirX = 0;
+				var recoilDirY = 0;
+				
+				
+				if(place_meeting(obj_player.x + recoilDirX, obj_player.y + recoilDirY,obj_parent_colidable))
+				{
+					recoilDirY = 0;
+					recoilDirX = 0;
+				}else
+				{
+					recoilDirX = lengthdir_x(other.recoil,-other.direction);
+					recoilDirY = lengthdir_y(other.recoil,+other.direction);
+				}
+				
+				obj_player.x -= recoilDirX;
+				obj_player.y -= recoilDirY;
+				
             };
         }
     }

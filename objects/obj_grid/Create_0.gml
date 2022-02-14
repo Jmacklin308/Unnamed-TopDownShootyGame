@@ -12,4 +12,3 @@ global.PlayerGrid = mp_grid_create(0,0,hCells,vCells,playerWidth,playerHeight);
 
 //add obsticles for enemy to avoid
 mp_grid_add_instances(global.EnemyGrid,obj_parent_colidable, false)
-mp_grid_add_instances(global.EnemyGrid,obj_CheeseChaser, true)

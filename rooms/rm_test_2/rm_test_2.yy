@@ -16,6 +16,13 @@
     {"visible":true,"depth":-700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"instances":[
             {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":224.0,"resourceVersion":"1.0","name":"inst_3224DD55","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":224.0,"resourceVersion":"1.0","name":"inst_2547C7E8","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":240.0,"resourceVersion":"1.0","name":"inst_400FD8AA","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":258.0,"y":256.0,"resourceVersion":"1.0","name":"inst_5261D038","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":298.75,"y":262.0,"resourceVersion":"1.0","name":"inst_2C96001C","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":270.0,"resourceVersion":"1.0","name":"inst_54ACAD48","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":377.0,"y":245.0,"resourceVersion":"1.0","name":"inst_7572A56B","tags":[],"resourceType":"GMRInstance",},
+            {"properties":[],"isDnd":false,"objectId":{"name":"obj_audioContol","path":"objects/obj_audioContol/obj_audioContol.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":17.0,"y":2.0,"resourceVersion":"1.0","name":"inst_7728D55C","tags":[],"resourceType":"GMRInstance",},
           ],"visible":true,"depth":-600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"CheddarChasers","tags":[],"resourceType":"GMRInstanceLayer",},
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRLayer",},
     {"visible":true,"depth":-500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
@@ -83,6 +90,13 @@
     {"name":"inst_4BCF3EF5","path":"rooms/rm_test_2/rm_test_2.yy",},
     {"name":"inst_3224DD55","path":"rooms/rm_test_2/rm_test_2.yy",},
     {"name":"inst_6AD95FF8","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_2547C7E8","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_400FD8AA","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_5261D038","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_2C96001C","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_54ACAD48","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_7572A56B","path":"rooms/rm_test_2/rm_test_2.yy",},
+    {"name":"inst_7728D55C","path":"rooms/rm_test_2/rm_test_2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

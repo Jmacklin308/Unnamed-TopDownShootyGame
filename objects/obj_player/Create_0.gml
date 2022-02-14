@@ -28,3 +28,8 @@ enum PLAYERSTATE
 {
 	FREE,
 }
+
+
+//place on enemy path
+
+

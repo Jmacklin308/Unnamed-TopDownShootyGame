@@ -44,7 +44,7 @@ src_animating_player();
 				BulletDamage = other.damage;
     			
     			//shake the screen
-    			obj_camera.shakeValue = 0.5;
+    			obj_camera.shakeValue = other.cameraShakeAmount;
     			
 				//movebackward
 				

@@ -3,7 +3,7 @@
     "name": "spr_player_idle_left",
     "path": "sprites/spr_player_idle_left/spr_player_idle_left.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

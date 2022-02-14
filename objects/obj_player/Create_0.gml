@@ -1,4 +1,3 @@
-
 //for moving
 h_input = 0;
 v_input = 0;
@@ -11,7 +10,8 @@ global.Player_MovingRight = false;
 global.Player_IsMoving = false;
 
 //player variables
-global.playerHealth = 100;
+startingHealth = 100
+global.playerHealth = startingHealth;
 
 //for alarm - damage system
 playerDamageTaken = 0;

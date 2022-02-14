@@ -17,3 +17,11 @@ canAttack = false;
 
 //for pathfinding
 enemyPath = path_add()
+
+
+//DEBUGGING set random color
+randR = random_range(0,255);
+randG = random_range(0,255);
+randB = random_range(0,255);
+
+image_blend = make_color_rgb(randR,randG,randB);

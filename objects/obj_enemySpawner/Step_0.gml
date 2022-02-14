@@ -4,6 +4,7 @@ if(wait(2) && !(global.totalEnemiesSpawned >= global.maxEnemies) )
 	instance = instance_create_layer(x,y,spawnLayer,obj_CheeseChaser);
 	instance.image_xscale = .5;
 	instance.image_yscale = .5;
+	instance.depth = 4;
 	
 	global.totalEnemiesSpawned += 1;
 }

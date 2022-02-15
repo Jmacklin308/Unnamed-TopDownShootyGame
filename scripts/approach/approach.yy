@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Approach Value",
-    "path": "folders/Scripts/Essential Scripts/Approach Value.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "approach",
+  "name": "Approach",
   "tags": [],
   "resourceType": "GMScript",
 }

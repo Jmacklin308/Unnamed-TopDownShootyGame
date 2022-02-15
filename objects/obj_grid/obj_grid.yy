@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "group1",
-    "path": "folders/Objects/group1.yy",
+    "name": "Utility",
+    "path": "folders/Objects/Utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_grid",

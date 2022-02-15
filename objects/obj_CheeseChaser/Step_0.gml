@@ -13,6 +13,17 @@ if(pathBool)
 }; 
 
 
+
+
+//var pointDir = point_direction(x,y,obj_player.x,obj_player.y);
+//movement_and_collision(pointDir,randomizedSpeed,obj_parent_colidable);
+
+if(place_meeting(x+sprite_width, y+sprite_width,obj_CheeseChaser))
+{
+	speed = 0;
+}
+
+
 //destroy if health is zero
 if(totalHealth <= 0)
 {
@@ -32,9 +43,5 @@ if(canAttack)
 }
 
 canAttack = false;
-
-adjustedX = x - prevX;
-DebugLog(adjustedX);
-
 
 

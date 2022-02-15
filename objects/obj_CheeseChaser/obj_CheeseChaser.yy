@@ -3,7 +3,7 @@
     "name": "spr_CheddarChaser",
     "path": "sprites/spr_CheddarChaser/spr_CheddarChaser.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

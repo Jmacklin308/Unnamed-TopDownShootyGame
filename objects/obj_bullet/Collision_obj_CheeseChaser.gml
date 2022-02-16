@@ -41,11 +41,34 @@ repeat(5)
 		sprite_index = spr_debris_blood;	
 		image_index = random(image_number-1);
 		image_speed = 0;
-		fric =0.8 // lower number - more drag
+		fric = 0.8 // lower number - more drag
 		motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
 	}
 }
 
+//play sound only when enemy is in view
+var inView = false;
 
+var playerAdjustmentX = obj_player.x + obj_camera.view_width * 0.5;
+var playerAdjustmentY = obj_player.y + obj_camera.view_height * 0.5;
+
+if((other.x < playerAdjustmentX || other.x > -playerAdjustmentX) && (other.y < playerAdjustmentY || other.y > -playerAdjustmentY))
+{
+	
+	var randsound = round(random_range(1,3));
+	switch (randsound) {
+    case 1:
+        audio_play_sound(snd_wetPunch1,5,0);
+        break;
+	case 2:
+		audio_play_sound(snd_wetPunch2,5,0);
+		break;
+	case 3:
+		audio_play_sound(snd_wetPunch3,5,0);
+		break;
+    default:
+        break;
+	}
+}
 
 instance_destroy();

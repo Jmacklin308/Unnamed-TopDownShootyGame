@@ -7,19 +7,17 @@ damage = 10;
 recoil = 4;
 recoilPlayerPush = 1;
 length_to_barel = 17;
-cooldown = 4;
+cooldown = 6;
 bullet_speed = 15;
 cameraShakeAmount = 0.4;
 ammo_count = 0;
 rateOfFire = cooldown;
-screen_shake_power = 2;
-weapon_spread = 7;
-number_of_projectiles = 1;
+number_of_projectiles =1;
+weapon_spread = 4 * number_of_projectiles;
 
 
 //for recoil
 _x = x;
-_imgAngle = image_angle;
 curvPos = 0;
 curvSpd = 0;
 
@@ -33,4 +31,4 @@ global.weapon_down_left = false;
 global.weapon_down_right = false;
 
 //for smooth aiming using twerp
-weapon_turn_speed = 9;
+weapon_turn_speed = 5;

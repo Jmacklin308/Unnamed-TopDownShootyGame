@@ -46,7 +46,7 @@ src_animating_player();
     			
 	    			//play gunshot
 	    			var _rand_sound = random_range(1,3);
-	    			if (_rand_sound == 1)audio_play_sound(snd_gunshot_high,10,0); else audio_play_sound(snd_gunshot_Low,10,0);
+	    			if (_rand_sound == 1)audio_play_sound(snd_gunshot_high_bass,10,0); else audio_play_sound(snd_gunshot_high_bass,10,0);
     			
 					//set bullet damage to weapon damage
 					BulletDamage = other.damage;

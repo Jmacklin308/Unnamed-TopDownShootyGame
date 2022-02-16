@@ -15,6 +15,9 @@ randR = random_range(0,255);
 randG = random_range(0,255);
 randB = random_range(0,255);
 
+//flash
+flash = 0; //frames
+
 //randomized color
 image_blend = make_color_rgb(randR,randG,randB);
 #endregion 

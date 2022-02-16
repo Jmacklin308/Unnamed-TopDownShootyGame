@@ -41,7 +41,6 @@ src_animating_player();
 	                direction = other.image_angle + _rand_dir;
 	    			image_angle = direction;
 				
-				
 					//stretch bullet
 					image_xscale = max(1, other.bullet_speed/sprite_width);
     			
@@ -82,4 +81,3 @@ src_animating_player();
 		}
     }
         
-

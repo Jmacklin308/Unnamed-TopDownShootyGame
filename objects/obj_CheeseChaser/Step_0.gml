@@ -13,8 +13,6 @@ if(pathBool)
 }; 
 
 
-
-
 //var pointDir = point_direction(x,y,obj_player.x,obj_player.y);
 //movement_and_collision(pointDir,randomizedSpeed,obj_parent_colidable);
 
@@ -43,5 +41,4 @@ if(canAttack)
 }
 
 canAttack = false;
-
 

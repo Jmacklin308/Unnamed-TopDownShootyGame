@@ -17,8 +17,6 @@ if (instance_exists(obj_player))
 	var _x = clamp((obj_player.x + ((mouse_x - obj_player.x) / _cam_range)) - camera_get_view_width(VIEW) / 2, 0, _cam_max_x);
 	var _y = clamp((obj_player.y + ((mouse_y - obj_player.y) / _cam_range)) - camera_get_view_height(VIEW) / 2, 0, _cam_max_y);
 	
-	
-	
 	//get view current position
 	var _cur_x = camera_get_view_x(VIEW);
 	var _cur_y = camera_get_view_y(VIEW);

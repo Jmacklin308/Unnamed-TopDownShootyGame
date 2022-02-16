@@ -19,7 +19,6 @@ repeat(5)
 		//prevents from staying on ground
 		debris = false
 		
-		
 		sprite_index = spr_particle_blood;
 		image_angle = random(360);
 		fric = 0.5;
@@ -31,7 +30,7 @@ repeat(5)
 
 
 //blood fall
-repeat(5)
+repeat(7)
 {
 	with(instance_create_depth(x,y,depth+500,obj_particle))
 	{
@@ -41,7 +40,9 @@ repeat(5)
 		sprite_index = spr_debris_blood;	
 		image_index = random(image_number-1);
 		image_speed = 0;
-		fric = 0.8 // lower number - more drag
+		
+		var randFric = random_range(0.6,0.9);
+		fric = randFric // lower number - more drag. Higher - more distance
 		motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
 	}
 }

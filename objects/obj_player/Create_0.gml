@@ -14,9 +14,6 @@ global.Player_IsMoving = false;
 startingHealth = 100
 global.playerHealth = startingHealth;
 
-//for alarm - damage system
-playerDamageTaken = 0;
-
 //for damage recieved
 beingAttacked = false;
 
@@ -28,8 +25,4 @@ enum PLAYERSTATE
 {
 	FREE,
 }
-
-
-//place on enemy path
-
 

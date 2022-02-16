@@ -1,5 +1,5 @@
 event_inherited();
-totalHealth = 40;
+totalHealth = random_range(10,25);
 randomizedSpeed = random_range(0.1, 0.5);
 
 damage = 10;

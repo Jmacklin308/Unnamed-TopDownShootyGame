@@ -5,8 +5,6 @@ switch (state)
 }
 
 
-DebugLog(beingAttacked);
-
 if(beingAttacked)
 {
 	playerHealth -= 1;

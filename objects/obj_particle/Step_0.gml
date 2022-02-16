@@ -16,7 +16,7 @@ switch(debris)
 	case true:
 		if(speed <= 0)
 		{
-			surface_set_target(obj_camera.debrisSurf);
+			surface_set_target(obj_surface.debrisSurf);
 			draw_self();
 			surface_reset_target();
 			instance_destroy();

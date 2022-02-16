@@ -18,21 +18,19 @@ screen_alpha	= Approach( screen_alpha, screen_alpha_set, .1 );
 #region		Controls
 ////////////////////////////////////////////////////////////////////////////
 
-// Open PauseMenu when you minimize the window 
-/*
-if ( !window_has_focus() ){
-	window = true;
-} else {
-	window = false;
-}
+//// Open PauseMenu when you minimize the window 
+//if ( !window_has_focus() ){
+//	window = true;
+//} else {
+//	window = false;
+//}
 
-if ( window != windowPrev ){
-	if ( !window ){
-		kPause = true;
-	}
-	windowPrev = window;
-}
-*/
+//if ( window != windowPrev ){
+//	if ( !window ){
+//		kPause = true;
+//	}
+//	windowPrev = window;
+//}
 
 
 ///		Trigger PauseMenu	///

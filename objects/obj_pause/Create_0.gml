@@ -24,7 +24,7 @@ gwidth		= display_get_gui_width();
 gheight		= display_get_gui_height();
 cx			= gwidth/2;
 cy			= gheight/2;
-screen_alpha		= 0;
+screen_alpha		= 0.5;
 screen_alpha_set	= 0;
 
 // Insert your sounds here

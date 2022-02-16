@@ -3,7 +3,7 @@ repeat(6)
 {
 	with(instance_create_depth(x,y,depth-1,obj_particle))
 	{
-		sprite_index = spr_particle;
+		sprite_index = spr_particle_wall;
 		image_angle = random(360);
 		fric = 0.8;
 		

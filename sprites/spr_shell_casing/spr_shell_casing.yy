@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TopDownShootyMcShootShoot",
-    "path": "TopDownShootyMcShootShoot.yyp",
+    "name": "sprites",
+    "path": "folders/sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_shell_casing",

@@ -53,6 +53,7 @@ src_animating_player();
     			
 	    			//shake the screen
 	    			obj_camera.shakeValue = other.cameraShakeAmount;
+					
 				
 					//if colliding - dont recoil back
 					var recoilDirX = 0;

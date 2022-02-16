@@ -9,11 +9,11 @@ recoilPlayerPush = 1;
 length_to_barel = 17;
 cooldown = 4;
 bullet_speed = 15;
-cameraShakeAmount = 0.6;
+cameraShakeAmount = 0.4;
 ammo_count = 0;
 rateOfFire = cooldown;
 screen_shake_power = 2;
-weapon_spread = 3;
+weapon_spread = 7;
 number_of_projectiles = 1;
 
 

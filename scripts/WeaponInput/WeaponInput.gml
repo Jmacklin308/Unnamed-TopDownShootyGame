@@ -1,6 +1,6 @@
-if(!global.gameOver)
+function WeaponInput()
 {
-	//Draw weapon on player
+		//Draw weapon on player
 	x = obj_player.x;
 	y = obj_player.y-10;
 
@@ -13,7 +13,9 @@ if(!global.gameOver)
 	//Animate the player off weapon position
 	src_animating_player();
 
+
 	var scoreDiff = global.playerScore - tempScore;
+	DebugLog(scoreDiff)
 	if(scoreDiff == 100)
 	{
 		//prevent lowering rate of fire too much
@@ -29,7 +31,6 @@ if(!global.gameOver)
 			tempScore = global.playerScore;
 		}
 	}
-
 
 	//SHOOTING
 	var _mouse_button = mouse_check_button(mb_left);
@@ -94,7 +95,4 @@ if(!global.gameOver)
 			};
 		}
 	}
-}else
-{
-	instance_destroy();
 }

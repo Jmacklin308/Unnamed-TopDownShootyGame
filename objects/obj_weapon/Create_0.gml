@@ -10,7 +10,6 @@ length_to_barel = 17;
 cooldown = 6;
 bullet_speed = 15;
 cameraShakeAmount = 0.4;
-ammo_count = 0;
 rateOfFire = 6;
 number_of_projectiles =1;
 weapon_spread = 4 * number_of_projectiles;

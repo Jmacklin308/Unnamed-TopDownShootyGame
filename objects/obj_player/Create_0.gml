@@ -21,6 +21,7 @@ hitByAttack = ds_list_create();
 enum PLAYERSTATE
 {
 	FREE,
+	DEATH,
 }
 
 

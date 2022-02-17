@@ -12,11 +12,8 @@ function HurtPlayer(_direction, _force, _damage)
 				obj_camera.cameraShakeAmount = irandom_range(4,8);
 				//shove player back
 				movement_and_collision(_direction,_force,obj_parent_colidable);
-				
 				audio_play_sound(snd_wetPunch2,10,0);
-				
-				
-				flash = 0.7;
+				flash = 5;
 				invulnerable = 60;
 			}
 		}

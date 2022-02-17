@@ -132,7 +132,7 @@
     "spriteId": {"name":"spr_player_running_right","path":"sprites/spr_player_running_right/spr_player_running_right.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

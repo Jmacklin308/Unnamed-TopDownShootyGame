@@ -53,6 +53,7 @@
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":1,},
     {"id":{"name":"make_color_hex","path":"scripts/make_color_hex/make_color_hex.yy",},"order":1,},
     {"id":{"name":"spr_trig","path":"sprites/spr_trig/spr_trig.yy",},"order":1,},
+    {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},"order":13,},
     {"id":{"name":"ds_list_combine","path":"scripts/ds_list_combine/ds_list_combine.yy",},"order":1,},
     {"id":{"name":"snd_goingNowhere_loop","path":"sounds/snd_goingNowhere_loop/snd_goingNowhere_loop.yy",},"order":2,},
     {"id":{"name":"approx","path":"scripts/approx/approx.yy",},"order":0,},

@@ -4,7 +4,7 @@ randomizedSpeed = random_range(0.1, 0.5);
 
 //attacking
 damage = 10;
-damageForce = 10;
+damageForce = 20;
 attackCooldown = 5;
 canAttack = false;
 
@@ -17,7 +17,7 @@ randR = random_range(0,255);
 randG = random_range(0,255);
 randB = random_range(0,255);
 
-//flash
+//flash when damages (Dont set)
 flash = 0; //frames
 
 //randomized color

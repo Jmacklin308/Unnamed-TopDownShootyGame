@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Cameras and Viewports",
-    "path": "folders/XGASOFT/GML+/Scripts/Cameras and Display/Cameras and Viewports.yy",
+    "path": "folders/Scripts/Extensions/GML+/Cameras and Display/Cameras and Viewports.yy",
   },
   "resourceVersion": "1.0",
   "name": "camera_get_view",

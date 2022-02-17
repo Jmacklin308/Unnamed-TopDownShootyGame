@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Arrays",
-    "path": "folders/XGASOFT/GML+/Scripts/Variable Functions/Arrays.yy",
+    "path": "folders/Scripts/Extensions/GML+/Variable Functions/Arrays.yy",
   },
   "resourceVersion": "1.0",
   "name": "array_shuffle",

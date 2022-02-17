@@ -2,8 +2,8 @@ function PlayerMovement(plyrSpeed){
     //for changing sprite later
     changeSprite = false;
     speed_with_delta = plyrSpeed * DT;
-    
-	//Keyboard Input
+	
+	
     keyLeft = keyboard_check(ord("A")) || keyboard_check(vk_left);
     keyRight = keyboard_check(ord("D")) || keyboard_check(vk_right);
     keyUp = keyboard_check(ord("W")) || keyboard_check(vk_up);
@@ -13,7 +13,9 @@ function PlayerMovement(plyrSpeed){
     h_input = keyRight - keyLeft;
     v_input = keyDown - keyUp;
     
-    
+
+	
+	
     input_direction = 0;
     //check if were moving
     if (h_input != 0 || v_input != 0)

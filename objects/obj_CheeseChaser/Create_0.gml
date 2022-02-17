@@ -2,7 +2,9 @@ event_inherited();
 totalHealth = random_range(10,25);
 randomizedSpeed = random_range(0.1, 0.5);
 
+//attacking
 damage = 10;
+damageForce = 10;
 attackCooldown = 5;
 canAttack = false;
 

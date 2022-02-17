@@ -16,7 +16,7 @@ src_animating_player();
 
 var scoreDiff = global.playerScore - tempScore;
 DebugLog(scoreDiff)
-if(scoreDiff == 10)
+if(scoreDiff == 100)
 {
 	//prevent lowering rate of fire too much
 	if(rateOfFire > 3)

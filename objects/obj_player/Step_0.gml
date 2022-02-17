@@ -1,13 +1,13 @@
-
 switch (state)
 {
 	case PLAYERSTATE.FREE: PlayerMovement(movement_speed); break;
 }
 
 
-if(beingAttacked)
+if(!global.gamePaused)
 {
-	playerHealth -= 1;
+	invulnerable = max(invulnerable-1,0);
+	flash = max(flash-0.05,0);
 }
 
 

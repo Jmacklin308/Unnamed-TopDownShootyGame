@@ -151,6 +151,7 @@
     {"id":{"name":"truestate_begin_step","path":"scripts/truestate_begin_step/truestate_begin_step.yy",},"order":0,},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},"order":2,},
     {"id":{"name":"sprite_VolcanicBlankMap","path":"sprites/sprite_VolcanicBlankMap/sprite_VolcanicBlankMap.yy",},"order":13,},
+    {"id":{"name":"HurtPlayer","path":"scripts/HurtPlayer/HurtPlayer.yy",},"order":2,},
     {"id":{"name":"within","path":"scripts/within/within.yy",},"order":3,},
     {"id":{"name":"spr_dirt24","path":"sprites/spr_dirt24/spr_dirt24.yy",},"order":6,},
     {"id":{"name":"array_depth","path":"scripts/array_depth/array_depth.yy",},"order":2,},

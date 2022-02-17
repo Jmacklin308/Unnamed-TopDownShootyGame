@@ -14,9 +14,6 @@ global.Player_IsMoving = false;
 startingHealth = 100
 global.playerHealth = startingHealth;
 
-//for damage recieved
-beingAttacked = false;
-
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 
@@ -25,4 +22,11 @@ enum PLAYERSTATE
 {
 	FREE,
 }
+
+
+//damage
+invulnerable = 0; //timer for damage
+flash = 0
+knockBackDistance = 0;
+
 

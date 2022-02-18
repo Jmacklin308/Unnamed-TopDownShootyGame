@@ -8,6 +8,8 @@ camera_set_view_size(VIEW,view_width,view_height);
 //set camera on player
 if (instance_exists(obj_player))
 {
+	
+	
 	//camera variables
 	var _cam_range = 3;
 	var _cam_max_x = room_width - view_width;

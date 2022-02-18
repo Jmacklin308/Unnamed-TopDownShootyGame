@@ -153,6 +153,7 @@
     {"id":{"name":"spr_dirt24","path":"sprites/spr_dirt24/spr_dirt24.yy",},"order":6,},
     {"id":{"name":"array_depth","path":"scripts/array_depth/array_depth.yy",},"order":2,},
     {"id":{"name":"__init_d3d","path":"scripts/__init_d3d/__init_d3d.yy",},"order":0,},
+    {"id":{"name":"obj_scoreHolder","path":"objects/obj_scoreHolder/obj_scoreHolder.yy",},"order":10,},
     {"id":{"name":"spr_player_running_right","path":"sprites/spr_player_running_right/spr_player_running_right.yy",},"order":3,},
     {"id":{"name":"smooth_approach","path":"scripts/smooth_approach/smooth_approach.yy",},"order":2,},
     {"id":{"name":"ds_struct_read","path":"scripts/ds_struct_read/ds_struct_read.yy",},"order":6,},

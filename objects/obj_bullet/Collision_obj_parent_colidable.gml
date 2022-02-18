@@ -17,7 +17,6 @@ repeat(6)
 {
 	with(instance_create_depth(x,y,depth-1,obj_particle))
 	{
-		
 		//prevents from staying on ground
 		debris = false;
 		
@@ -37,10 +36,9 @@ repeat(5)
 	{
 		//prevents from staying on ground
 		debris = false;
-		
 		sprite_index = spr_spark;
 		fric = 0.9;
-		motion_add(other.image_angle+random_range(-90,90), random_range(-4,-6));
+		motion_add(other.image_angle+random_range(-20,20), random_range(-4,-6));
 		image_angle = direction;
 	}
 }

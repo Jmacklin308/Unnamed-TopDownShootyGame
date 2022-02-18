@@ -5,18 +5,12 @@
 
 if(!global.gameOver)
 {
-	var pathBool = mp_grid_path(global.EnemyGrid,enemyPath,x,y,obj_player.x,obj_player.y,true);
+	var pathBool = mp_grid_path(global.EnemyGrid,enemyPath,x,y,target.x,target.y,true);
 	//pathfinding
 	if(pathBool)
 	{
 		path_start(enemyPath,randomizedSpeed, path_action_continue,false);
 	}; 
-
-
-	if(place_meeting(x+sprite_width, y+sprite_width,obj_CheeseChaser))
-	{
-		speed = 0;
-	}
 
 	//destroy if health is zero
 	if(totalHealth <= 0)
@@ -40,12 +34,7 @@ if(!global.gameOver)
 
 }else
 {
-	
-	//freeze location
-	var _x = x;
-	var _y = y;
-	x = _x;
-	y = _y;
+	path_speed = 0
 }
 
 

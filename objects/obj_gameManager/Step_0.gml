@@ -1,4 +1,4 @@
-if(global.playerHealth >= 0 && global.playerDeathAnimDone = true)
+if(global.playerHealth = 0)
 {
 	global.gameOver = true;
 }

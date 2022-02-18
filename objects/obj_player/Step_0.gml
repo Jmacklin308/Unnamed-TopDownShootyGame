@@ -19,3 +19,5 @@ if(global.playerHealth <= 0)
 }
 
 
+
+if(global.playerDeathAnimDone) instance_destroy();

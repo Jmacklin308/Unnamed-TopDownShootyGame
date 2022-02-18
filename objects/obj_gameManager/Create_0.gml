@@ -4,6 +4,7 @@ global.maxEnemies = 200;
 global.enemySpawnRate = 2;
 global.gameOver = false;
 global.playerDeathAnimDone = false;
+global.preGameOver = false;
 
 
 //pausing

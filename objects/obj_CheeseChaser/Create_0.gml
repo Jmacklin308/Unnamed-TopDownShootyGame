@@ -10,6 +10,8 @@ canAttack = false;
 
 //for pathfinding
 enemyPath = path_add()
+target = obj_player;
+
 
 #region debug
 //DEBUGGING set random color
@@ -22,4 +24,10 @@ flash = 0; //frames
 
 //randomized color
 image_blend = make_color_rgb(randR,randG,randB);
+
+
+
+
+
+
 #endregion 

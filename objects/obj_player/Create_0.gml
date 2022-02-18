@@ -27,6 +27,4 @@ enum PLAYERSTATE
 //damage
 invulnerable = 0; //timer for damage
 flash = 0
-knockBackDistance = 0;
-
 

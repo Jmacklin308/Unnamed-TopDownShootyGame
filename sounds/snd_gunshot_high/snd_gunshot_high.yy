@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 3,
   "volume": 0.51,
   "preload": false,
@@ -13,8 +14,8 @@
   "soundFile": "snd_gunshot_high.wav",
   "duration": 0.14737,
   "parent": {
-    "name": "sounds",
-    "path": "folders/sounds.yy",
+    "name": "Weapons",
+    "path": "folders/sounds/Weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_gunshot_high",

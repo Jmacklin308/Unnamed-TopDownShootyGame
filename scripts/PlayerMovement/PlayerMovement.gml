@@ -68,6 +68,11 @@ function PlayerMovement(plyrSpeed){
             if (v_input == 1 ) sprite_index = spr_player_running_down_right;
         }
         
+        //Play sound at footstep
+        if(image_index == 0 || image_index == 4)
+        {
+        	PlayRandomFootstep();
+        }
         
     }else { //If the player is idle
             

@@ -43,25 +43,5 @@ repeat(5)
 	}
 }
 
-var randsound = round(random_range(1,5));
-switch (randsound) {
-    case 1:
-        audio_play_sound(snd_punch1,5,0);
-        break;
-	case 2:
-		audio_play_sound(snd_punch2,5,0);
-		break;
-	case 3:
-		audio_play_sound(snd_punch3,5,0);
-		break;
-	case 4:
-		audio_play_sound(snd_punch4,5,0);
-		break;
-	case 5:
-		audio_play_sound(snd_punch5,5,0);
-		break;
-    default:
-        // code here
-        break;
-}
 
+PlayRandomHit();

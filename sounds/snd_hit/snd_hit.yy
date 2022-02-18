@@ -14,8 +14,8 @@
   "soundFile": "snd_hit.mp3",
   "duration": 0.313469,
   "parent": {
-    "name": "sounds",
-    "path": "folders/sounds.yy",
+    "name": "impacts",
+    "path": "folders/sounds/impacts.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_hit",

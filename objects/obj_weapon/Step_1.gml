@@ -56,8 +56,7 @@ if(!global.gameOver)
 					image_xscale = max(1, other.bullet_speed/sprite_width);
     			
 		    		//play gunshot
-		    		var _rand_sound = random_range(1,3);
-		    		if (_rand_sound == 1)audio_play_sound(snd_gunshot_high_bass,10,0); else audio_play_sound(snd_gunshot_high_bass,10,0);
+		    		PlayRandomGunshot();
     			
 					//set bullet damage to weapon damage
 					BulletDamage = other.damage;

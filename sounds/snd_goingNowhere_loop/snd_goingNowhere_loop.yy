@@ -14,8 +14,8 @@
   "soundFile": "snd_goingNowhere_loop.ogg",
   "duration": 41.99179,
   "parent": {
-    "name": "sounds",
-    "path": "folders/sounds.yy",
+    "name": "Music",
+    "path": "folders/sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_goingNowhere_loop",

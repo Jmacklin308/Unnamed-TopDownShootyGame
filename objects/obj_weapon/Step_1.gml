@@ -74,8 +74,8 @@ if(!global.gameOver)
 					if(place_meeting(obj_player.x + recoilDirX, obj_player.y + recoilDirY,obj_parent_colidable))
 					{
 						
-						recoilDirX = lengthdir_x(other.recoilPlayerPush,+other.direction);
-						recoilDirY = lengthdir_y(other.recoilPlayerPush,-other.direction);
+						recoilDirX = 0;
+						recoilDirY = 0;
 						
 					}else
 					{
@@ -85,7 +85,7 @@ if(!global.gameOver)
 				
 					obj_player.x -= recoilDirX;
 					obj_player.y -= recoilDirY;
-				
+					
 						
 					//PUSH weapon
 					var recoilAmount = lerp(other.recoil,0,0.3)

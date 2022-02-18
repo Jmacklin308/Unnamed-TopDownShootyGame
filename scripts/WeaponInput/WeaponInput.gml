@@ -4,7 +4,7 @@ function WeaponInput()
 	x = obj_player.x;
 	y = obj_player.y-10;
 
-	curvPos = 0
+	curvPos = 0;
 	curvSpd = 0.05;
 
 	//Aiming
@@ -15,19 +15,16 @@ function WeaponInput()
 
 
 	var scoreDiff = global.playerScore - tempScore;
-	DebugLog(scoreDiff)
 	if(scoreDiff == 100)
 	{
 		//prevent lowering rate of fire too much
 		if(rateOfFire > 3)
 		{
 			rateOfFire -= 1;
-			DebugLog("UPGRADING weapon speed")
-			tempScore = global.playerScore
+			tempScore = global.playerScore;
 		}else if( number_of_projectiles < 3) //max out at 3 projectiles
 		{
 			number_of_projectiles += 1;
-			DebugLog("INCREASING PROJECTILES");
 			tempScore = global.playerScore;
 		}
 	}
@@ -89,7 +86,7 @@ function WeaponInput()
 				
 						
 					//PUSH weapon
-					var recoilAmount = lerp(other.recoil,0,0.3)
+					var recoilAmount = lerp(other.recoil,0,0.3);
 					other.x-= lengthdir_x(recoilAmount,recoilDirX);
 					other.y-= lengthdir_y(recoilAmount,recoilDirY);
 			};

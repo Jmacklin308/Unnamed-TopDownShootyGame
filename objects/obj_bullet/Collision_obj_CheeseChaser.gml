@@ -1,4 +1,3 @@
-
 with(other)
 {
 	if(totalHealth != 0)
@@ -17,14 +16,14 @@ repeat(5)
 	{
 		
 		//prevents from staying on ground
-		debris = false
+		debris = false;
 		
 		sprite_index = spr_particle_blood;
 		image_angle = random(360);
 		fric = 0.5;
 		
 		//move the particle
-		motion_add(other.image_angle + random_range(-70,70), random_range(-4,-9))
+		motion_add(other.image_angle + random_range(-70,70), random_range(-4,-9));
 	}
 }
 
@@ -42,13 +41,11 @@ repeat(7)
 		image_speed = 0;
 		
 		var randFric = random_range(0.6,0.9);
-		fric = randFric // lower number - more drag. Higher - more distance
+		fric = randFric; // lower number - more drag. Higher - more distance
 		motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
 	}
 }
 
-//play sound only when enemy is in view
-var inView = false;
 
 var playerAdjustmentX = obj_player.x + obj_camera.view_width * 0.5;
 var playerAdjustmentY = obj_player.y + obj_camera.view_height * 0.5;
@@ -71,5 +68,7 @@ if((other.x < playerAdjustmentX || other.x > -playerAdjustmentX) && (other.y < p
         break;
 	}
 }
+
+
 
 instance_destroy();

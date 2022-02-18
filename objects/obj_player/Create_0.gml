@@ -24,7 +24,6 @@ enum PLAYERSTATE
 	DEATH,
 }
 
-
 //damage
 invulnerable = 0; //timer for damage
 flash = 0

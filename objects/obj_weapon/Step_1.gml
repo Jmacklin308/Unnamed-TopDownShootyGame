@@ -20,12 +20,10 @@ if(!global.gameOver)
 		if(rateOfFire > 3)
 		{
 			rateOfFire -= 1;
-			DebugLog("UPGRADING weapon speed")
 			tempScore = global.playerScore
 		}else if( number_of_projectiles < 3) //max out at 3 projectiles
 		{
 			number_of_projectiles += 1;
-			DebugLog("INCREASING PROJECTILES");
 			tempScore = global.playerScore;
 		}
 	}

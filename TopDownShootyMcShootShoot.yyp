@@ -167,6 +167,7 @@
     {"id":{"name":"obj_CheeseChaser","path":"objects/obj_CheeseChaser/obj_CheeseChaser.yy",},"order":8,},
     {"id":{"name":"spr_player_running_left","path":"sprites/spr_player_running_left/spr_player_running_left.yy",},"order":4,},
     {"id":{"name":"truestate_get_name","path":"scripts/truestate_get_name/truestate_get_name.yy",},"order":2,},
+    {"id":{"name":"CollisionNormal","path":"scripts/CollisionNormal/CollisionNormal.yy",},"order":10,},
     {"id":{"name":"twerp","path":"scripts/twerp/twerp.yy",},"order":7,},
     {"id":{"name":"truestate_system_init","path":"scripts/truestate_system_init/truestate_system_init.yy",},"order":9,},
     {"id":{"name":"spr_lava","path":"sprites/spr_lava/spr_lava.yy",},"order":3,},

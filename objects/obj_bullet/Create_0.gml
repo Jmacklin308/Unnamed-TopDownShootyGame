@@ -1,2 +1,3 @@
-event_inherited();
 BulletDamage = 0;
+
+BulletCollisionLimit = 2;

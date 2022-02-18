@@ -1,14 +1,8 @@
 function src_animating_player(){
 	
 	
-	DebugLog(global.Player_MovingUp);
-	
 	////set weapon behind if moving up (always)
 	if(global.Player_MovingUp) depth = obj_player.depth + 1; else depth = obj_player.depth - 1;
-	
-	////set weapon in front if moving down (always)
-	//if(global.Player_MovingDown) depth = obj_player.depth - 1; else depth = obj_player.depth + 1;
-	
 	
 	//IDLE
 	////idle right

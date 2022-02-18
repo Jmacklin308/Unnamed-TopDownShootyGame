@@ -12,12 +12,7 @@ if(!global.gamePaused)
 }
 
 
+//game over
 
-if(global.playerHealth <= 0)
-{
-	state = PLAYERSTATE.DEATH;
-}
-
-
-
+if(global.playerHealth <= 0) state = PLAYERSTATE.DEATH;
 if(global.playerDeathAnimDone) instance_destroy();

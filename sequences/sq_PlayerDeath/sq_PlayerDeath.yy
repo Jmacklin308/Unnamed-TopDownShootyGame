@@ -81,8 +81,8 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "TopDownShootyMcShootShoot",
-    "path": "TopDownShootyMcShootShoot.yyp",
+    "name": "Sequences",
+    "path": "folders/Sequences.yy",
   },
   "resourceVersion": "1.3",
   "name": "sq_PlayerDeath",

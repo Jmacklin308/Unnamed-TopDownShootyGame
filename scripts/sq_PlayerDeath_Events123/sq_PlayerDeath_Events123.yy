@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "TopDownShootyMcShootShoot",
-    "path": "TopDownShootyMcShootShoot.yyp",
+    "name": "Sequences",
+    "path": "folders/Sequences.yy",
   },
   "resourceVersion": "1.0",
   "name": "sq_PlayerDeath_Events123",

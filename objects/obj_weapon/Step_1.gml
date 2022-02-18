@@ -73,8 +73,10 @@ if(!global.gameOver)
 					/////PUSH back player
 					if(place_meeting(obj_player.x + recoilDirX, obj_player.y + recoilDirY,obj_parent_colidable))
 					{
-						recoilDirY = 0;
-						recoilDirX = 0;
+						
+						recoilDirX = lengthdir_x(other.recoilPlayerPush,+other.direction);
+						recoilDirY = lengthdir_y(other.recoilPlayerPush,-other.direction);
+						
 					}else
 					{
 						recoilDirX = lengthdir_x(other.recoilPlayerPush,-other.direction);
@@ -87,8 +89,8 @@ if(!global.gameOver)
 						
 					//PUSH weapon
 					var recoilAmount = lerp(other.recoil,0,0.3)
-					other.x-= lengthdir_x(recoilAmount,recoilDirX);
-					other.y-= lengthdir_y(recoilAmount,recoilDirY);
+					other.x-= lengthdir_x(recoilAmount,-other.direction);
+					other.y-= lengthdir_y(recoilAmount,+other.direction);
 			};
 		}
 	}

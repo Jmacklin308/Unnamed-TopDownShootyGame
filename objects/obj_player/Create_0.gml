@@ -1,4 +1,3 @@
-event_inherited();
 //for moving
 h_input = 0;
 v_input = 0;

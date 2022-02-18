@@ -5,7 +5,7 @@ event_inherited();
 
 damage = 10;
 recoil = 4;
-recoilPlayerPush = 1;
+recoilPlayerPush = 4;
 length_to_barel = 17;
 cooldown = 6;
 bullet_speed = 15;

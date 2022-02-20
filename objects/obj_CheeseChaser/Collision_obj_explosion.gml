@@ -1,0 +1,1 @@
+totalHealth -= 15;

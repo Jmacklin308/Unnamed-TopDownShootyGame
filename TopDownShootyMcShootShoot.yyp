@@ -218,6 +218,7 @@
     {"id":{"name":"truestate_set_default","path":"scripts/truestate_set_default/truestate_set_default.yy",},"order":6,},
     {"id":{"name":"spr_particle_blood","path":"sprites/spr_particle_blood/spr_particle_blood.yy",},"order":3,},
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},"order":16,},
+    {"id":{"name":"Sprite47","path":"sprites/Sprite47/Sprite47.yy",},"order":17,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":3,},
     {"id":{"name":"tileset_collision","path":"tilesets/tileset_collision/tileset_collision.yy",},"order":2,},
     {"id":{"name":"snd_Light__Concrete_footsteps_2","path":"sounds/snd_Light__Concrete_footsteps_2/snd_Light__Concrete_footsteps_2.yy",},"order":1,},

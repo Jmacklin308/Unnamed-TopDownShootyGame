@@ -27,6 +27,7 @@
     {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":84,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":0,"value":"54.4","rangeEnabled":true,"rangeMin":10.0,"rangeMax":70.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"movement_speed","tags":[],"resourceType":"GMObjectProperty",},

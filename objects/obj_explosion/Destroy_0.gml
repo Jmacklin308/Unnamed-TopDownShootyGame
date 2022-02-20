@@ -1,5 +1,4 @@
 obj_camera.shakeValue = 3;
-Sleep(30)
 
 //blood spurt
 repeat(30)

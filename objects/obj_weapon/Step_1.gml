@@ -6,13 +6,15 @@ if(!global.gameOver)
 
 	curvPos = 0
 	curvSpd = 0.05;
-
+	
 	//Aiming
 	src_weapon_aiming(weapon_turn_speed);
 
 	//Animate the player off weapon position
 	src_animating_player();
 
+
+	//UPGRADING WEAPON
 	var scoreDiff = global.playerScore - tempScore;
 	if(scoreDiff == 100)
 	{
@@ -23,6 +25,18 @@ if(!global.gameOver)
 			tempScore = global.playerScore
 		}
 	}
+
+
+	//check for collision 
+	var dontRecoil = false;
+	
+	_tempRecoilX = lengthdir_x(recoilPlayerPush,-image_angle);
+	_tempRecoilY = lengthdir_y(recoilPlayerPush,image_angle);
+	
+	if(place_meeting(obj_player.x - _tempRecoilX*3,obj_player.y, obj_parent_colidable)) dontRecoil = true; else dontRecoil = false;
+	if(place_meeting(obj_player.x,obj_player.y - _tempRecoilY*3, obj_parent_colidable)) dontRecoil = true; else dontRecoil = false;
+	
+	DebugLog("DontRecoil:" + string(dontRecoil));
 
 
 	//SHOOTING
@@ -65,31 +79,51 @@ if(!global.gameOver)
 					var recoilDirY = 0;
 				
 					/////PUSH back player
-					if(place_meeting(obj_player.x + recoilDirX, obj_player.y + recoilDirY,obj_parent_colidable))
-					{
+					recoilDirX = lengthdir_x(other.recoilPlayerPush,-other.direction);
+					recoilDirY = lengthdir_y(other.recoilPlayerPush,+other.direction);
 						
-						recoilDirX = 0;
-						recoilDirY = 0;
+					if(place_meeting(obj_player.x - recoilDirX*5, obj_player.y, obj_parent_colidable))
+					{
+						DebugLog("COLLIDING X");
+						
+						//while(!place_meeting(obj_player.x - recoilDirX*5, obj_player.y,obj_parent_colidable))
+						//{
+						
+						//}
 						
 					}else
 					{
-						recoilDirX = lengthdir_x(other.recoilPlayerPush,-other.direction);
-						recoilDirY = lengthdir_y(other.recoilPlayerPush,+other.direction);
+						obj_player.x -= recoilDirX;
 					}
-				
-					obj_player.x -= recoilDirX;
-					obj_player.y -= recoilDirY;
 					
+					if(place_meeting(obj_player.x , obj_player.y - recoilDirY*5, obj_parent_colidable))
+					{
+						DebugLog("COLLIDING Y");
+						
+						//while(!place_meeting(obj_player.x, obj_player.y - recoilDirY*5,obj_parent_colidable))
+						//{
+						
+						//}
+						
+					}else
+					{
+						obj_player.y -= recoilDirY;
+					}
+					
+					
+					
+					
+				
+
+				
 						
 					//PUSH weapon
 					var recoilAmount = lerp(other.recoil,0,0.3)
 					other.x-= lengthdir_x(recoilAmount,-other.direction);
 					other.y-= lengthdir_y(recoilAmount,+other.direction);
 					
-					
-					
-					//shoot shell
-					repeat(1)
+					//Create shell casing
+					repeat(other.number_of_projectiles)
 					{
 						with(instance_create_depth(x- other.xdir,y-other.ydir,depth+100,obj_particle))
 						{
@@ -114,3 +148,5 @@ if(!global.gameOver)
 {
 	instance_destroy();
 }
+
+dontRecoil = false;

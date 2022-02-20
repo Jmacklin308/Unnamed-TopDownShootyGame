@@ -1,17 +1,37 @@
 ////Position camera after movment
 #macro VIEW view_camera[0]
 
+//var minCam = 0.25;
+//var maxCam = 0;
+//if(global.cameraZoom < minCam)
+//{
+//	minCam = 0.8;
+//}
+//else if (global.cameraZoom > 1.5)
+//{
+//	maxCam = 1.2;
+//}
+
+
+
+//var zoom = lerp(minCam,maxCam,0.05);
+//DebugLog("ZOOM:"+string(zoom))
+
+var zoom = 0.7;
+
+//var zoom = 1;
 //set size
-camera_set_view_size(VIEW,view_width,view_height);
+camera_set_view_size(VIEW,view_width*zoom ,view_height*zoom);
+
 
 
 //set camera on player
 if (instance_exists(obj_player))
 {
-	
-	
 	//camera variables
-	var _cam_range = 3;
+	var _cam_range = 2;
+	
+	//keep camera in room
 	var _cam_max_x = room_width - view_width;
 	var _cam_max_y = room_height - view_height;
 	
@@ -39,3 +59,5 @@ if (instance_exists(obj_player))
 	if (shakeValue > 0) shakeValue -= 0.1;
 	
 }
+
+

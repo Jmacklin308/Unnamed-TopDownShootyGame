@@ -32,3 +32,10 @@ weapon_turn_speed = 8;
 
 
 tempScore = global.playerScore;
+
+
+//for recoil collision checking
+_tempRecoilX = lengthdir_x(recoilPlayerPush,direction);
+_tempRecoilY = lengthdir_y(recoilPlayerPush,direction);
+
+

@@ -1,3 +1,6 @@
+var prevAngle = image_angle;
+var difAngle = 0;
+
 with(other)
 {
 	if(totalHealth != 0)
@@ -22,8 +25,17 @@ repeat(5)
 		image_angle = random(360);
 		fric = 0.5;
 		
+		
+		difAngle = angle_difference(other.image_angle,prevAngle);
+		
+		
+		var newAngle = prevAngle + difAngle;
+		
 		//move the particle
-		motion_add(other.image_angle + random_range(-70,70), random_range(-4,-9));
+		//motion_add(random_range(difAngle-45,difAngle+45), random_range(4,9));
+		
+		motion_add(newAngle + random_range(-90,90), random_range(4,9));
+		
 	}
 }
 
@@ -42,7 +54,19 @@ repeat(7)
 		
 		var randFric = random_range(0.6,0.9);
 		fric = randFric; // lower number - more drag. Higher - more distance
-		motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
+		
+				
+		difAngle = angle_difference(other.image_angle,prevAngle);
+		
+		
+		var newAngle = prevAngle + difAngle;
+		
+		//move the particle
+		//motion_add(random_range(difAngle-45,difAngle+45), random_range(4,9));
+		
+		motion_add(newAngle + random_range(-30,30), random_range(4,9));
+
+		//motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
 	}
 }
 

@@ -27,17 +27,9 @@ if(!global.gameOver)
 	}
 
 
-	//check for collision 
-	var dontRecoil = false;
-	
+	//for debugline
 	_tempRecoilX = lengthdir_x(recoilPlayerPush,-image_angle);
 	_tempRecoilY = lengthdir_y(recoilPlayerPush,image_angle);
-	
-	if(place_meeting(obj_player.x - _tempRecoilX*3,obj_player.y, obj_parent_colidable)) dontRecoil = true; else dontRecoil = false;
-	if(place_meeting(obj_player.x,obj_player.y - _tempRecoilY*3, obj_parent_colidable)) dontRecoil = true; else dontRecoil = false;
-	
-	DebugLog("DontRecoil:" + string(dontRecoil));
-
 
 	//SHOOTING
 	var _mouse_button = mouse_check_button(mb_left);
@@ -82,28 +74,20 @@ if(!global.gameOver)
 					recoilDirX = lengthdir_x(other.recoilPlayerPush,-other.direction);
 					recoilDirY = lengthdir_y(other.recoilPlayerPush,+other.direction);
 						
-					if(place_meeting(obj_player.x - recoilDirX*5, obj_player.y, obj_parent_colidable))
+					if(place_meeting(obj_player.x - recoilDirX*4, obj_player.y, obj_parent_colidable))
 					{
 						DebugLog("COLLIDING X");
-						
-						//while(!place_meeting(obj_player.x - recoilDirX*5, obj_player.y,obj_parent_colidable))
-						//{
-						
-						//}
+
 						
 					}else
 					{
 						obj_player.x -= recoilDirX;
 					}
 					
-					if(place_meeting(obj_player.x , obj_player.y - recoilDirY*5, obj_parent_colidable))
+					if(place_meeting(obj_player.x , obj_player.y - recoilDirY*4, obj_parent_colidable))
 					{
 						DebugLog("COLLIDING Y");
 						
-						//while(!place_meeting(obj_player.x, obj_player.y - recoilDirY*5,obj_parent_colidable))
-						//{
-						
-						//}
 						
 					}else
 					{
@@ -111,11 +95,6 @@ if(!global.gameOver)
 					}
 					
 					
-					
-					
-				
-
-				
 						
 					//PUSH weapon
 					var recoilAmount = lerp(other.recoil,0,0.3)

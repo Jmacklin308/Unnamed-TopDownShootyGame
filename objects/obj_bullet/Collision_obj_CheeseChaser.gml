@@ -13,7 +13,7 @@ with(other)
 
 
 //blood spurt
-repeat(5)
+repeat(10)
 {
 	with(instance_create_depth(x,y,depth-1,obj_particle))
 	{
@@ -23,8 +23,10 @@ repeat(5)
 		
 		sprite_index = spr_particle_blood;
 		image_angle = random(360);
-		fric = 0.5;
-		
+		fric = random_range(0.3,0.9);
+		image_xscale = random_range(1,1.4);
+		image_yscale = random_range(1,1.4);
+		image_alpha = random_range(0.87,1);
 		
 		difAngle = angle_difference(other.image_angle,prevAngle);
 		
@@ -41,7 +43,7 @@ repeat(5)
 
 
 //blood fall
-repeat(7)
+repeat(16)
 {
 	with(instance_create_depth(x,y,depth+500,obj_particle))
 	{
@@ -51,22 +53,19 @@ repeat(7)
 		sprite_index = spr_debris_blood;	
 		image_index = random(image_number-1);
 		image_speed = 0;
+		image_xscale = random_range(1,1.4);
+		image_yscale = random_range(1,1.4);
 		
-		var randFric = random_range(0.6,0.9);
+		
+		var randFric = random_range(0.3,0.9);
 		fric = randFric; // lower number - more drag. Higher - more distance
-		
 				
 		difAngle = angle_difference(other.image_angle,prevAngle);
 		
-		
 		var newAngle = prevAngle + difAngle;
-		
-		//move the particle
-		//motion_add(random_range(difAngle-45,difAngle+45), random_range(4,9));
 		
 		motion_add(newAngle + random_range(-30,30), random_range(4,9));
 
-		//motion_add(other.image_angle+random_range(-40,40),random_range(-1,-6));
 	}
 }
 
@@ -92,7 +91,6 @@ if((other.x < playerAdjustmentX || other.x > -playerAdjustmentX) && (other.y < p
         break;
 	}
 }
-
 
 
 instance_destroy();

@@ -1,6 +1,9 @@
 event_inherited();
 totalHealth = random_range(10,25);
 randomizedSpeed = random_range(0.1, 0.5);
+canExplode = Chance(0.40);
+
+
 
 //attacking
 damage = 10;
@@ -25,6 +28,10 @@ flash = 0; //frames
 //randomized color
 image_blend = make_color_rgb(randR,randG,randB);
 
+if(canExplode)
+{
+	image_blend = make_color_rgb(255,0,0);
+}
 
 
 

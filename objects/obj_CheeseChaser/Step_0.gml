@@ -1,7 +1,3 @@
-//move towards player
-//path = path_add();
-//mp_linear_path(path, target.x,target.y, randomizedSpeed, 1);
-//path_start(path, randomizedSpeed,path_action_stop, true);
 
 if(!global.gameOver)
 {
@@ -15,6 +11,13 @@ if(!global.gameOver)
 	//destroy if health is zero
 	if(totalHealth <= 0)
 	{
+		
+		if(canExplode)
+		{
+			instance_create_depth(x,y,depth-100,obj_explosion)
+			PlayRandomExplosion();
+			
+		}
 		instance_destroy();
 	}
 

@@ -1,28 +1,10 @@
 ////Position camera after movment
 #macro VIEW view_camera[0]
 
-//var minCam = 0.25;
-//var maxCam = 0;
-//if(global.cameraZoom < minCam)
-//{
-//	minCam = 0.8;
-//}
-//else if (global.cameraZoom > 1.5)
-//{
-//	maxCam = 1.2;
-//}
+var zoom = 0.9;
 
 
-
-//var zoom = lerp(minCam,maxCam,0.05);
-//DebugLog("ZOOM:"+string(zoom))
-
-var zoom = 0.7;
-
-//var zoom = 1;
-//set size
 camera_set_view_size(VIEW,view_width*zoom ,view_height*zoom);
-
 
 
 //set camera on player

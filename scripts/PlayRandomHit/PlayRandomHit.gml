@@ -14,7 +14,7 @@ function PlayRandomHit(){
 	
 	//set random pitch
 	audio_sound_pitch(_sound,random_range(0.8,1.2));
-	audio_sound_gain(_sound,random_range(0.4,0.6),0);
-	audio_play_sound(_sound,5,false);
+	audio_sound_gain(_sound,random_range(0.4,0.7),0.5);
+	audio_play_sound(_sound,random_range(10,25),false);
 	
 }

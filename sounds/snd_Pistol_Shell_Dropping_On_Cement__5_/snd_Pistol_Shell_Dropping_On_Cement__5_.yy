@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 3,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_Grass_1.wav",
-  "duration": 0.923084,
+  "soundFile": "snd_Pistol_Shell_Dropping_On_Cement__5_.wav",
+  "duration": 0.509161,
   "parent": {
-    "name": "impacts",
-    "path": "folders/sounds/impacts.yy",
+    "name": "Shell casings",
+    "path": "folders/sounds/impacts/Shell casings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_Grass_1",
+  "name": "snd_Pistol_Shell_Dropping_On_Cement__5_",
   "tags": [],
   "resourceType": "GMSound",
 }

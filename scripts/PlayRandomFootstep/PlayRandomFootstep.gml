@@ -15,6 +15,6 @@ function PlayRandomFootstep(){
 	//set random pitch
 	audio_sound_pitch(_sound,random_range(0.2,0.4));
 	audio_sound_gain(_sound, random_range(0.1,0.2),10);
-	audio_play_sound(_sound,5,false);
+	audio_play_sound(_sound,random_range(5,7),false);
 	
 }

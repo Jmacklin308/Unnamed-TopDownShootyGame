@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"PlayerFreeze","path":"scripts/PlayerFreeze/PlayerFreeze.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"snd_Pistol_Shell_Dropping_On_Cement__4_","path":"sounds/snd_Pistol_Shell_Dropping_On_Cement__4_/snd_Pistol_Shell_Dropping_On_Cement__4_.yy",},"order":1,},
     {"id":{"name":"is_even","path":"scripts/is_even/is_even.yy",},"order":3,},
@@ -35,11 +36,10 @@
     {"id":{"name":"snd_Body_armor_6","path":"sounds/snd_Body_armor_6/snd_Body_armor_6.yy",},"order":18,},
     {"id":{"name":"truestate_state_exists","path":"scripts/truestate_state_exists/truestate_state_exists.yy",},"order":4,},
     {"id":{"name":"color_get_hex","path":"scripts/color_get_hex/color_get_hex.yy",},"order":0,},
-    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":20,},
+    {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},"order":20,},
     {"id":{"name":"stick_to","path":"scripts/stick_to/stick_to.yy",},"order":1,},
     {"id":{"name":"truestate_clear_history","path":"scripts/truestate_clear_history/truestate_clear_history.yy",},"order":0,},
     {"id":{"name":"snd_Pistol_Shell_Dropping_On_Cement__3_","path":"sounds/snd_Pistol_Shell_Dropping_On_Cement__3_/snd_Pistol_Shell_Dropping_On_Cement__3_.yy",},"order":0,},
-    {"id":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},"order":5,},
     {"id":{"name":"rot_vec_","path":"scripts/rot_vec_/rot_vec_.yy",},"order":5,},
     {"id":{"name":"PlayerDeath","path":"scripts/PlayerDeath/PlayerDeath.yy",},"order":3,},
     {"id":{"name":"ds_struct_exists","path":"scripts/ds_struct_exists/ds_struct_exists.yy",},"order":4,},
@@ -47,6 +47,7 @@
     {"id":{"name":"DebugLog","path":"scripts/DebugLog/DebugLog.yy",},"order":0,},
     {"id":{"name":"is_empty","path":"scripts/is_empty/is_empty.yy",},"order":1,},
     {"id":{"name":"ds_list_replace_","path":"scripts/ds_list_replace_/ds_list_replace_.yy",},"order":2,},
+    {"id":{"name":"obj_button_exit","path":"objects/obj_button_exit/obj_button_exit.yy",},"order":22,},
     {"id":{"name":"is_odd","path":"scripts/is_odd/is_odd.yy",},"order":4,},
     {"id":{"name":"round_to","path":"scripts/round_to/round_to.yy",},"order":5,},
     {"id":{"name":"emod","path":"scripts/emod/emod.yy",},"order":1,},
@@ -166,6 +167,7 @@
     {"id":{"name":"truestate_draw","path":"scripts/truestate_draw/truestate_draw.yy",},"order":2,},
     {"id":{"name":"snd_Grass_8","path":"sounds/snd_Grass_8/snd_Grass_8.yy",},"order":21,},
     {"id":{"name":"WeaponInput","path":"scripts/WeaponInput/WeaponInput.yy",},"order":4,},
+    {"id":{"name":"spr_enemySpawner","path":"sprites/spr_enemySpawner/spr_enemySpawner.yy",},"order":18,},
     {"id":{"name":"snd_Explosion_Flesh_1","path":"sounds/snd_Explosion_Flesh_1/snd_Explosion_Flesh_1.yy",},"order":0,},
     {"id":{"name":"draw_text_outlined","path":"scripts/draw_text_outlined/draw_text_outlined.yy",},"order":2,},
     {"id":{"name":"spr_lavaLevel","path":"sprites/spr_lavaLevel/spr_lavaLevel.yy",},"order":5,},
@@ -282,7 +284,6 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_test_2","path":"rooms/rm_test_2/rm_test_2.yy",},},
-    {"roomId":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
     {"roomId":{"name":"room_VolcanicBlankMap","path":"rooms/room_VolcanicBlankMap/room_VolcanicBlankMap.yy",},},
   ],
   "Folders": [

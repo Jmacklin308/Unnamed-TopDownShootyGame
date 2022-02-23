@@ -1,1 +1,1 @@
-game_end();
+global.gamePaused = !global.gamePaused;

@@ -21,6 +21,7 @@ enum PLAYERSTATE
 {
 	FREE,
 	DEATH,
+	FREEZE,
 }
 
 //damage

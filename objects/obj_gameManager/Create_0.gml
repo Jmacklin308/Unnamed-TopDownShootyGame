@@ -8,3 +8,8 @@ global.playerDeathAnimDone = false;
 
 //pausing
 global.gamePaused = false;
+
+
+
+//for game menu at beginning
+global.gameStarted = false;

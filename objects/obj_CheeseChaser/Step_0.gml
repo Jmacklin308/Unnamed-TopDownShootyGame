@@ -1,4 +1,7 @@
 
+
+
+
 if(!global.gameOver)
 {
 	var pathBool = mp_grid_path(global.EnemyGrid,enemyPath,x,y,target.x,target.y,true);
@@ -34,6 +37,17 @@ if(!global.gameOver)
 	}
 
 	canAttack = false;
+	
+	var prevpathSpeed = path_speed;
+	
+	if(global.gamePaused)
+	{
+		path_speed = 0;
+	}else
+	{
+		path_speed = prevpathSpeed;
+	}
+	
 
 }else
 {

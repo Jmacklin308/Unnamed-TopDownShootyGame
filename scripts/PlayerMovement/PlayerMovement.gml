@@ -13,8 +13,6 @@ function PlayerMovement(plyrSpeed){
     h_input = keyRight - keyLeft;
     v_input = keyDown - keyUp;
     
-
-	
 	
     input_direction = 0;
     //check if were moving

@@ -1,0 +1,1 @@
+if(global.gameOver) global.gameStarted = false;

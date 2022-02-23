@@ -4,7 +4,6 @@ randomizedSpeed = random_range(0.1, 0.5);
 canExplode = Chance(0.20);
 
 
-
 //attacking
 damage = 10;
 damageForce = 20;

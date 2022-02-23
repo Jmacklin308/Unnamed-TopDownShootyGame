@@ -150,6 +150,7 @@
     {"id":{"name":"ds_struct_copy","path":"scripts/ds_struct_copy/ds_struct_copy.yy",},"order":0,},
     {"id":{"name":"ds_struct_find_","path":"scripts/ds_struct_find_/ds_struct_find_.yy",},"order":5,},
     {"id":{"name":"wait","path":"scripts/wait/wait.yy",},"order":3,},
+    {"id":{"name":"spr_grubletGib","path":"sprites/spr_grubletGib/spr_grubletGib.yy",},"order":2,},
     {"id":{"name":"mouse_over","path":"scripts/mouse_over/mouse_over.yy",},"order":0,},
     {"id":{"name":"PlayRandomGunshot","path":"scripts/PlayRandomGunshot/PlayRandomGunshot.yy",},"order":1,},
     {"id":{"name":"surface_write","path":"scripts/surface_write/surface_write.yy",},"order":2,},

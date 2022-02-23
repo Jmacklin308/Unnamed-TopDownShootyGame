@@ -12,6 +12,39 @@ with(other)
 }
 
 
+
+//gib
+if(other.canExplode && Chance(0.25))
+{
+	repeat(random(3))
+	{
+		with(instance_create_depth(x,y,depth-1,obj_particle))
+		{
+		
+			//prevents from staying on ground
+			debris = true;
+		
+			sprite_index = spr_grubletGib;
+			image_angle = random(360);
+			fric = random_range(0.8,0.9);
+			image_index = random_range(0,image_number)
+			image_xscale = 0.4;
+			image_yscale = 0.4;
+			image_speed = 0;
+		
+			difAngle = angle_difference(other.image_angle,prevAngle);
+		
+		
+			var newAngle = prevAngle + difAngle;
+		
+		
+			motion_add(newAngle + random_range(-90,90), random_range(4,9));
+		
+		}
+	}
+}
+
+
 //blood spurt
 repeat(10)
 {

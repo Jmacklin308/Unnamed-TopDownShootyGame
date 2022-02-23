@@ -1,7 +1,13 @@
+#macro c_myColor 95,47,69
+
+
 event_inherited();
 totalHealth = random_range(10,25);
 randomizedSpeed = random_range(0.1, 0.5);
 canExplode = Chance(0.20);
+flash  = 0;
+
+
 
 
 //attacking
@@ -16,16 +22,9 @@ target = obj_player;
 
 
 #region debug
-//DEBUGGING set random color
-randR = random_range(0,255);
-randG = random_range(0,255);
-randB = random_range(0,255);
 
-//flash when damages (Dont set)
-flash = 0; //frames
 
-//randomized color
-image_blend = make_color_rgb(randR,randG,randB);
+image_blend = make_color_rgb(c_myColor);
 
 if(canExplode)
 {

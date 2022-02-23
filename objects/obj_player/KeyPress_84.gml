@@ -1,1 +1,1 @@
-global.playerHealth = 0;
+if(global.gameStarted) global.playerHealth = 0;

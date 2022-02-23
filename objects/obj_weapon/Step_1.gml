@@ -8,7 +8,7 @@ if(!global.gameOver)
 	curvSpd = 0.05;
 	
 	//Aiming
-	src_weapon_aiming(weapon_turn_speed);
+	if(!global.gamePaused) src_weapon_aiming(weapon_turn_speed);
 
 	//Animate the player off weapon position
 	src_animating_player();
@@ -26,7 +26,6 @@ if(!global.gameOver)
 		}
 	}
 
-
 	//for debugline
 	_tempRecoilX = lengthdir_x(recoilPlayerPush,-image_angle);
 	_tempRecoilY = lengthdir_y(recoilPlayerPush,image_angle);
@@ -35,7 +34,7 @@ if(!global.gameOver)
 	var _mouse_button = mouse_check_button(mb_left);
     
 	cooldown = cooldown - 1;
-	if (_mouse_button and (cooldown < 0))
+	if (_mouse_button and (cooldown < 0) && !global.gamePaused)
 	{
 	    cooldown = rateOfFire;
         

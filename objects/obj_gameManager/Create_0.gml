@@ -1,4 +1,3 @@
-
 global.totalEnemiesSpawned = 0;
 global.maxEnemies = 200;
 global.enemySpawnRate = 2;
@@ -11,3 +10,4 @@ global.gamePaused = false;
 
 //for game menu at beginning
 global.gameStarted = false;
+
